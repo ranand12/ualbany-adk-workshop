@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAlbany Central IT — Build with AI: Gemini to ADK</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+<style>
+:root {
+  --gc-blue: #4285F4;
+  --gc-red: #EA4335;
+  --gc-yellow: #FBBC04;
+  --gc-green: #34A853;
+  --gc-dark-blue: #185ABC;
+  --gc-purple: #8E24AA;
+  --gc-coral: #EE4D5D;
+  --gc-teal: #00897B;
+  --gc-lavender: #AC87EB;
+  --gc-sky: #078EFB;
+  --gc-text: #202124;
+  --gc-secondary: #5F6368;
+  --gc-border: #BDC1C6;
+  --gc-surface: #F8F9FA;
+  --gc-bg: #FFFFFF;
+  --radius: 12px;
+  --gc-blue-light: #D2E3FC;
+  --gc-blue-200: #8AB4F8;
+  --gc-blue-600: #1967D2;
+  --gc-blue-800: #174EA6;
+  --gc-gray-200: #E8EAED;
+  --gc-gray-300: #D9D9D9;
+  --font: 'Google Sans', Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); color: var(--gc-text); background: #000; -webkit-font-smoothing: antialiased; cursor: none; overflow: hidden; }
+body.cursor-visible { cursor: default; }
+h1 { font-size: 2.5rem; font-weight: 700; color: var(--gc-text); letter-spacing: -0.02em; line-height: 1.2; }
+h2 { font-size: 1.875rem; font-weight: 700; color: var(--gc-text); letter-spacing: -0.02em; line-height: 1.3; }
+h3 { font-size: 1.25rem; font-weight: 700; color: var(--gc-text); }
+strong { color: var(--gc-blue); font-weight: 700; }
+.subtext { color: var(--gc-secondary); font-size: 1.1rem; font-weight: 400; }
+.caption { color: var(--gc-secondary); font-size: 0.75rem; font-weight: 400; }
+.label-upper { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.stat-number { font-size: 3.75rem; font-weight: 700; color: var(--gc-text); line-height: 1; }
+.stat-number.xl { font-size: 6rem; }
+.stat-label { font-size: 1.125rem; font-weight: 700; color: var(--gc-text); }
+.stat-desc { font-size: 1.125rem; font-weight: 400; color: var(--gc-secondary); }
+
+.slide {
+  display: none; position: absolute; inset: 0; flex-direction: column;
+  justify-content: center; align-items: flex-start; padding: 60px 80px;
+  text-align: left; background: var(--gc-bg);
+}
+.slide.active { display: flex; }
+.slide.title-slide { align-items: flex-start; }
+.slide.centered { align-items: center; text-align: center; }
+.slide.dark-bg { background: var(--gc-text); color: #fff; }
+.slide.dark-bg h1, .slide.dark-bg h2, .slide.dark-bg h3 { color: #fff; }
+.slide.dark-bg strong { color: var(--gc-blue-200); }
+.slide.dark-bg .subtext { color: rgba(255,255,255,0.6); }
+.slide.colored-bg { color: #fff; }
+.slide.colored-bg.gc-green-bg { background: var(--gc-green); }
+.slide.colored-bg.gc-blue-bg { background: var(--gc-blue); }
+.slide.colored-bg.gc-purple-bg { background: var(--gc-purple); }
+.slide.colored-bg.gc-teal-bg { background: var(--gc-teal); }
+.slide.colored-bg.gc-dark-blue-bg { background: var(--gc-dark-blue); }
+.slide.colored-bg .section-number, .slide.colored-bg .section-title { color: inherit; }
+
+.gc-banner { position: absolute; bottom: 0; left: 0; right: 0; height: 8px; display: flex; z-index: 100; }
+.gc-banner .gc-band { flex: 1; height: 100%; }
+.gc-banner .gc-band:nth-child(1) { background: var(--gc-blue); }
+.gc-banner .gc-band:nth-child(2) { background: var(--gc-red); }
+.gc-banner .gc-band:nth-child(3) { background: var(--gc-yellow); }
+.gc-banner .gc-band:nth-child(4) { background: var(--gc-green); }
+
+.gc-logo { position: absolute; bottom: 24px; left: 40px; z-index: 101; opacity: 0.7; font-size: 14px; font-weight: 500; }
+.slide.title-slide .gc-logo { font-size: 16px; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); pointer-events: none; }
+.reveal.shown { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.reveal.shown-fast { opacity: 1; transform: translateY(0); pointer-events: auto; transition-duration: 0s; }
+.reveal-scale { opacity: 0; transform: scale(0.7); transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.reveal-scale.shown, .reveal-scale.shown-fast { opacity: 1; transform: scale(1); }
+.reveal-scale.shown-fast { transition-duration: 0s; }
+.reveal-blur { opacity: 0; filter: blur(20px); transform: scale(1.05); transition: opacity 0.7s ease, filter 0.7s ease, transform 0.7s ease; }
+.reveal-blur.shown, .reveal-blur.shown-fast { opacity: 1; filter: blur(0); transform: scale(1); }
+.reveal-blur.shown-fast { transition-duration: 0s; }
+
+.section-number { font-size: 4rem; font-weight: 700; color: var(--gc-text); line-height: 1; margin-bottom: 8px; }
+.section-title { font-size: 2rem; font-weight: 700; color: var(--gc-text); }
+.section-subtitle { font-size: 1.25rem; color: var(--gc-secondary); margin-top: 16px; max-width: 60%; }
+.main-statement { font-size: 2rem; font-weight: 400; line-height: 1.5; max-width: 65%; }
+.main-statement strong { font-weight: 700; }
+
+.card { background: var(--gc-surface); border: 1px solid rgba(0,0,0,0.08); border-radius: var(--radius); padding: 28px 24px; text-align: left; }
+.card:hover { border-color: var(--gc-blue); box-shadow: 0 4px 16px rgba(66,133,244,0.12); }
+.card.blue-top { border-top: 3px solid var(--gc-blue); }
+.card.red-top { border-top: 3px solid var(--gc-red); }
+.card.yellow-top { border-top: 3px solid var(--gc-yellow); }
+.card.green-top { border-top: 3px solid var(--gc-green); }
+.card.purple-top { border-top: 3px solid var(--gc-purple); }
+.card.teal-top { border-top: 3px solid var(--gc-teal); }
+.card.dark-blue-top { border-top: 3px solid var(--gc-dark-blue); }
+
+.card-grid { display: grid; gap: 16px; width: 100%; margin-top: 24px; }
+.card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card-grid.cols-5 { grid-template-columns: repeat(5, 1fr); }
+
+.gc-badge { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #fff; flex-shrink: 0; margin-bottom: 12px; }
+.gc-badge.lg { width: 64px; height: 64px; font-size: 1.8rem; }
+.gc-badge.blue { background: var(--gc-blue); }
+.gc-badge.red { background: var(--gc-red); }
+.gc-badge.yellow { background: var(--gc-yellow); color: var(--gc-text); }
+.gc-badge.green { background: var(--gc-green); }
+.gc-badge.purple { background: var(--gc-purple); }
+.gc-badge.teal { background: var(--gc-teal); }
+.gc-badge.dark-blue { background: var(--gc-dark-blue); }
+.gc-badge .material-symbols-outlined { font-size: 24px; color: #fff; }
+.gc-badge.lg .material-symbols-outlined { font-size: 32px; }
+.gc-badge.yellow .material-symbols-outlined { color: var(--gc-text); }
+
+.gc-flow { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+.gc-flow-box { padding: 18px 28px; border-radius: 8px; color: #fff; font-weight: 600; font-size: 0.95rem; text-align: center; min-width: 140px; position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.gc-flow-box.blue { background: var(--gc-blue); }
+.gc-flow-box.red { background: var(--gc-red); }
+.gc-flow-box.yellow { background: var(--gc-yellow); color: var(--gc-text); }
+.gc-flow-box.green { background: var(--gc-green); }
+.gc-flow-box.dark-blue { background: var(--gc-dark-blue); }
+.gc-flow-box.purple { background: #8E24AA; }
+.gc-flow-box.teal { background: #00897B; }
+.gc-flow-box.coral { background: #EE4D5D; }
+.gc-flow-box .material-symbols-outlined { font-size: 28px; color: #fff; }
+.gc-flow-box.yellow .material-symbols-outlined { color: var(--gc-text); }
+.gc-flow-arrow { width: 40px; height: 2px; background: var(--gc-border); position: relative; flex-shrink: 0; }
+.gc-flow-arrow::after { content: ''; position: absolute; right: -1px; top: -5px; border: 6px solid transparent; border-left: 8px solid var(--gc-border); }
+.gc-flow.vertical { flex-direction: column; }
+.gc-flow.vertical .gc-flow-arrow { width: 2px; height: 40px; }
+.gc-flow.vertical .gc-flow-arrow::after { right: auto; top: auto; bottom: -1px; left: -5px; border: 6px solid transparent; border-top: 8px solid var(--gc-border); border-left: 6px solid transparent; }
+
+.gc-table { width: 100%; max-width: 1100px; border-collapse: collapse; font-size: 0.85rem; table-layout: fixed; }
+.gc-table th { background: var(--gc-blue); color: #fff; padding: 12px 16px; text-align: center; font-weight: 600; }
+.gc-table td { padding: 10px 16px; border-bottom: 1px solid var(--gc-border); text-align: center; }
+.gc-table tr:nth-child(even) td { background: var(--gc-surface); }
+.gc-table .highlight-cell { color: var(--gc-blue); font-weight: 700; }
+
+.numbered-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 24px; width: 100%; }
+.numbered-item-num { font-size: 1.875rem; font-weight: 700; color: var(--gc-text); margin-bottom: 8px; }
+.numbered-item-text { font-size: 0.8rem; color: var(--gc-secondary); line-height: 1.5; }
+
+.gc-icon-row { display: flex; align-items: center; gap: 16px; padding: 12px 0; }
+.gc-label { font-size: 1.1rem; color: var(--gc-text); font-weight: 500; }
+.gc-sublabel { font-size: 0.9rem; color: var(--gc-secondary); margin-top: 2px; }
+
+.live-demo-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--gc-red); color: #fff; padding: 8px 20px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(234,67,53,0.4); } 50% { box-shadow: 0 0 20px 4px rgba(234,67,53,0.2); } }
+
+.terminal-block { background: #1a1a2e; border-radius: var(--radius); padding: 24px 28px; font-family: 'Fira Code', 'SF Mono', 'Cascadia Code', monospace; font-size: 0.85rem; color: #e0e0e0; line-height: 1.8; width: 100%; overflow: hidden; }
+.terminal-prompt { color: var(--gc-green); }
+.terminal-flag { color: var(--gc-blue-200); }
+.terminal-string { color: var(--gc-yellow); }
+.terminal-comment { color: #666; font-style: italic; }
+
+.progress { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 200; }
+.progress .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(0,0,0,0.12); transition: all 0.3s; cursor: pointer; }
+.progress .dot.active { background: var(--gc-blue); width: 24px; border-radius: 4px; }
+.slide-number { position: fixed; top: 30px; right: 40px; font-size: 14px; color: rgba(0,0,0,0.2); font-variant-numeric: tabular-nums; z-index: 200; }
+
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; font-size: 24px; vertical-align: -0.125em; display: inline-block; line-height: 1; flex-shrink: 0; }
+
+@media (max-width: 700px) {
+  .slide { padding: 40px 30px; }
+  .card-grid.cols-3, .card-grid.cols-4, .card-grid.cols-5 { grid-template-columns: 1fr; }
+  .numbered-grid { grid-template-columns: repeat(2, 1fr); }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide active title-slide" id="slide-1">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <p class="label-upper" style="color:var(--gc-blue); margin-bottom:16px;">UAlbany Central IT Workshop</p>
+    <h1 style="font-size:2.8rem;">Build with AI:<br>From <strong>Gemini</strong> to<br>Live Data <strong>Agents</strong></h1>
+    <p class="subtext" style="margin-top:20px;">Four Levels &mdash; All Natural Language, Zero Coding</p>
+    <p class="caption" style="margin-top:8px;">September 2026</p>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 2: Agenda -->
+<div class="slide" id="slide-2">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Four <strong>Levels</strong></h2>
+    <p class="subtext">Every level uses natural language &mdash; no coding at any stage</p>
+  </div>
+  <div class="card-grid cols-4" style="margin-top:32px;">
+    <div class="card blue-top reveal-scale" data-step="1" style="padding:20px;">
+      <div class="gc-badge blue"><span class="material-symbols-outlined">upload_file</span></div>
+      <h3 style="font-size:1rem;">Level 1</h3>
+      <p style="font-size:0.85rem; font-weight:700; margin-top:4px;">File Analysis</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Upload data &amp; papers into Gemini Enterprise. Analyze, cross-reference, get insights.</p>
+      <div style="margin-top:8px;"><span class="label-upper" style="color:var(--gc-blue);">Gemini UI</span></div>
+    </div>
+    <div class="card green-top reveal-scale" data-step="2" style="padding:20px;">
+      <div class="gc-badge green"><span class="material-symbols-outlined">smart_toy</span></div>
+      <h3 style="font-size:1rem;">Level 2</h3>
+      <p style="font-size:0.85rem; font-weight:700; margin-top:4px;">Custom Agents</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Build shareable AI agents directly in the Gemini Enterprise UI. Write instructions, test, share.</p>
+      <div style="margin-top:8px;"><span class="label-upper" style="color:var(--gc-green);">Gemini UI</span></div>
+    </div>
+    <div class="card purple-top reveal-scale" data-step="3" style="padding:20px;">
+      <div class="gc-badge purple"><span class="material-symbols-outlined">terminal</span></div>
+      <h3 style="font-size:1rem;">Level 3</h3>
+      <p style="font-size:0.85rem; font-weight:700; margin-top:4px;">ADK Agents</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Create multi-agent systems with tools using Gemini CLI. Describe what you want in plain English.</p>
+      <div style="margin-top:8px;"><span class="label-upper" style="color:var(--gc-purple);">Gemini CLI</span></div>
+    </div>
+    <div class="card dark-blue-top reveal-scale" data-step="4" style="padding:20px;">
+      <div class="gc-badge dark-blue"><span class="material-symbols-outlined">database</span></div>
+      <h3 style="font-size:1rem;">Level 4</h3>
+      <p style="font-size:0.85rem; font-weight:700; margin-top:4px;">BigQuery + Agents</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Stand up a BigQuery dataset with real web data, then connect it to your ADK agent.</p>
+      <div style="margin-top:8px;"><span class="label-upper" style="color:var(--gc-dark-blue);">Gemini CLI</span></div>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
+    <div style="background:var(--gc-surface); border-radius:var(--radius); padding:16px 24px; border-left:4px solid var(--gc-blue);">
+      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-blue);">lightbulb</span> <strong style="color:var(--gc-text);">Key idea:</strong> Even the ADK framework is built by describing what you want in natural language. Gemini CLI writes the code for you.</p>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 3: Section Break - Level 1 -->
+<div class="slide colored-bg gc-blue-bg" id="slide-3">
+  <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <div class="section-number" style="color:rgba(255,255,255,0.4);">01</div>
+    <div class="section-title">File Analysis with Gemini Enterprise</div>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:50%;">From raw data to research insight in 60 seconds &mdash; no code, no cleanup, no waiting.</p>
+  </div>
+  <div class="reveal" data-step="1" style="margin-top:24px;">
+    <div class="live-demo-badge" style="background:rgba(255,255,255,0.2);"><span class="material-symbols-outlined" style="font-size:18px; color:#fff;">play_circle</span> LIVE DEMO</div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 4: File Analysis Scenario -->
+<div class="slide" id="slide-4">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Demo Scenario: <strong>Biomedical Research</strong></h2>
+    <p class="subtext">A SUNY researcher with RNA-seq results and a CRISPR paper</p>
+  </div>
+  <div class="gc-flow" style="margin-top:40px; width:100%; justify-content:center;">
+    <div class="gc-flow-box blue reveal-scale" data-step="1">
+      <span class="material-symbols-outlined">table_chart</span>
+      <span>Upload CSV</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">RNA-seq data</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="2"></div>
+    <div class="gc-flow-box green reveal-scale" data-step="2">
+      <span class="material-symbols-outlined">psychology</span>
+      <span>Analyze</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Top genes, pathways</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="3"></div>
+    <div class="gc-flow-box yellow reveal-scale" data-step="3">
+      <span class="material-symbols-outlined">description</span>
+      <span>Upload PDF</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">CRISPR paper</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="4"></div>
+    <div class="gc-flow-box red reveal-scale" data-step="4">
+      <span class="material-symbols-outlined">compare_arrows</span>
+      <span>Cross-Reference</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">CRISPR candidates</span>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:40px; width:100%;">
+    <div style="display:flex; gap:24px; flex-wrap:wrap;">
+      <div class="gc-icon-row">
+        <div class="gc-badge blue" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
+        <div><div class="gc-label" style="font-size:0.9rem;">Identifies significant genes by p-value</div></div>
+      </div>
+      <div class="gc-icon-row">
+        <div class="gc-badge green" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
+        <div><div class="gc-label" style="font-size:0.9rem;">Flags potential batch effects</div></div>
+      </div>
+      <div class="gc-icon-row">
+        <div class="gc-badge red" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
+        <div><div class="gc-label" style="font-size:0.9rem;">Synthesizes across multiple uploads</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 5: Section Break - Level 2 -->
+<div class="slide colored-bg gc-green-bg" id="slide-5">
+  <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <div class="section-number" style="color:rgba(255,255,255,0.4);">02</div>
+    <div class="section-title">Custom Agents in Gemini</div>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:50%;">Tier-1 support that never sleeps and always follows the script.</p>
+  </div>
+  <div class="reveal" data-step="1" style="margin-top:24px;">
+    <div class="live-demo-badge" style="background:rgba(255,255,255,0.2);"><span class="material-symbols-outlined" style="font-size:18px; color:#fff;">play_circle</span> LIVE DEMO</div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 6: What are Custom Agents -->
+<div class="slide" id="slide-6">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>What are <strong>Custom Agents</strong>?</h2>
+    <p class="subtext">AI agents you build directly in Gemini Enterprise</p>
+  </div>
+  <div class="gc-flow" style="margin-top:40px; width:100%; justify-content:center;">
+    <div class="gc-flow-box blue reveal-scale" data-step="1">
+      <span class="material-symbols-outlined">add_circle</span>
+      <span>Create Agent</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="2"></div>
+    <div class="gc-flow-box green reveal-scale" data-step="2">
+      <span class="material-symbols-outlined">edit_note</span>
+      <span>Write Instructions</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="3"></div>
+    <div class="gc-flow-box yellow reveal-scale" data-step="3">
+      <span class="material-symbols-outlined">chat</span>
+      <span>Test Prompts</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="4"></div>
+    <div class="gc-flow-box red reveal-scale" data-step="4">
+      <span class="material-symbols-outlined">share</span>
+      <span>Share with Team</span>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:40px; width:100%;">
+    <div style="background:var(--gc-surface); border-radius:var(--radius); padding:20px 24px; border-left:4px solid var(--gc-green);">
+      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-green);">lightbulb</span> <strong style="color:var(--gc-text);">Key insight:</strong> If you can write a knowledge base article, you can build a Custom Agent. No coding required.</p>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 7: Two Agents We'll Build -->
+<div class="slide" id="slide-7">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Two Agents <strong>We'll Build</strong></h2>
+  </div>
+  <div class="card-grid cols-2" style="margin-top:32px;">
+    <div class="card blue-top reveal-scale" data-step="1" style="padding:32px;">
+      <div class="gc-badge blue lg"><span class="material-symbols-outlined">support_agent</span></div>
+      <h3 style="font-size:1.3rem;">Campus IT Help Desk</h3>
+      <p class="subtext" style="font-size:0.9rem; margin-top:8px;">Handles Tier-1 support questions</p>
+      <div style="margin-top:16px; font-size:0.85rem; color:var(--gc-secondary); line-height:1.8;">
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-blue);">check</span> Top 10 IT issue solutions</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-blue);">check</span> Non-technical, patient language</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-blue);">check</span> Knows when to escalate</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-blue);">check</span> Security incident routing</div>
+      </div>
+    </div>
+    <div class="card green-top reveal-scale" data-step="2" style="padding:32px;">
+      <div class="gc-badge green lg"><span class="material-symbols-outlined">badge</span></div>
+      <h3 style="font-size:1.3rem;">New Employee IT Setup</h3>
+      <p class="subtext" style="font-size:0.9rem; margin-top:8px;">Walks new hires through Day-1 IT</p>
+      <div style="margin-top:16px; font-size:0.85rem; color:var(--gc-secondary); line-height:1.8;">
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-green);">check</span> Day-1 checklist (email, VPN, MFA)</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-green);">check</span> Self-service portal links</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-green);">check</span> Department-specific software</div>
+        <div><span class="material-symbols-outlined" style="font-size:14px; vertical-align:middle; color:var(--gc-green);">check</span> Building access / campus ID</div>
+      </div>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 8: Section Break - Level 3 -->
+<div class="slide colored-bg gc-purple-bg" id="slide-8">
+  <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <div class="section-number" style="color:rgba(255,255,255,0.4);">03</div>
+    <div class="section-title">ADK Agents via Gemini CLI</div>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:55%;">Describe what you want in plain English. Gemini CLI builds the agent framework for you.</p>
+  </div>
+  <div class="reveal" data-step="1" style="margin-top:24px;">
+    <div class="live-demo-badge" style="background:rgba(255,255,255,0.2);"><span class="material-symbols-outlined" style="font-size:18px; color:#fff;">play_circle</span> LIVE DEMO</div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 9: Five Core Concepts (KEPT) -->
+<div class="slide" id="slide-9">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Five Core <strong>ADK Concepts</strong></h2>
+    <p class="subtext">The vocabulary &mdash; Gemini CLI handles the implementation</p>
+  </div>
+  <div class="numbered-grid" style="margin-top:32px;">
+    <div class="reveal-scale" data-step="1" style="text-align:center;">
+      <div class="gc-badge blue lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">psychology</span></div>
+      <div class="numbered-item-num" style="font-size:1.5rem;">Agent</div>
+      <div class="numbered-item-text">A worker that reasons about a task</div>
+      <div style="font-size:0.7rem; color:var(--gc-blue); margin-top:8px; font-weight:600;">Network Agent investigates Wi-Fi</div>
+    </div>
+    <div class="reveal-scale" data-step="2" style="text-align:center;">
+      <div class="gc-badge red lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">build</span></div>
+      <div class="numbered-item-num" style="font-size:1.5rem;">Tool</div>
+      <div class="numbered-item-text">A controlled capability the agent can call</div>
+      <div style="font-size:0.7rem; color:var(--gc-red); margin-top:8px; font-weight:600;">Check status, create ticket</div>
+    </div>
+    <div class="reveal-scale" data-step="3" style="text-align:center;">
+      <div class="gc-badge green lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">group</span></div>
+      <div class="numbered-item-num" style="font-size:1.5rem;">Sub-Agent</div>
+      <div class="numbered-item-text">A specialist another agent can delegate to</div>
+      <div style="font-size:0.7rem; color:var(--gc-green); margin-top:8px; font-weight:600;">Security handles suspicious Duo</div>
+    </div>
+    <div class="reveal-scale" data-step="4" style="text-align:center;">
+      <div class="gc-badge yellow lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">route</span></div>
+      <div class="numbered-item-num" style="font-size:1.5rem;">Workflow</div>
+      <div class="numbered-item-text">Run known steps in a fixed order</div>
+      <div style="font-size:0.7rem; color:var(--gc-yellow); margin-top:8px; font-weight:600;color:#886600;">Intake &rarr; Diagnose &rarr; Ticket</div>
+    </div>
+    <div class="reveal-scale" data-step="5" style="text-align:center;">
+      <div class="gc-badge purple lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">hub</span></div>
+      <div class="numbered-item-num" style="font-size:1.5rem;">MCP</div>
+      <div class="numbered-item-text">Standard way to consume external tools &amp; data</div>
+      <div style="font-size:0.7rem; color:var(--gc-purple); margin-top:8px; font-weight:600;">Read runbooks, incidents, status</div>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 10: How Gemini CLI Builds Agents -->
+<div class="slide" id="slide-10">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>You Describe It. <strong>Gemini Builds It.</strong></h2>
+    <p class="subtext">Natural language in, working agent out</p>
+  </div>
+  <div class="reveal-scale" data-step="1" style="margin-top:32px; width:100%;">
+    <div class="terminal-block">
+      <div><span class="terminal-prompt">$</span> gemini</div>
+      <div style="margin-top:12px;"><span class="terminal-string">"Build me a Central IT help desk agent using ADK.</span></div>
+      <div><span class="terminal-string">&nbsp;It should have four specialist sub-agents:</span></div>
+      <div><span class="terminal-string">&nbsp;Identity, Network, Applications, and Security.</span></div>
+      <div><span class="terminal-string">&nbsp;Give it tools to check system status and create tickets.</span></div>
+      <div><span class="terminal-string">&nbsp;The coordinator should route issues to the right specialist."</span></div>
+    </div>
+  </div>
+  <div class="gc-flow" style="margin-top:32px; width:100%; justify-content:center;">
+    <div class="gc-flow-box purple reveal-scale" data-step="2">
+      <span class="material-symbols-outlined">chat</span>
+      <span>Your Description</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Plain English</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="3"></div>
+    <div class="gc-flow-box teal reveal-scale" data-step="3">
+      <span class="material-symbols-outlined">terminal</span>
+      <span>Gemini CLI</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Generates the code</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="4"></div>
+    <div class="gc-flow-box blue reveal-scale" data-step="4">
+      <span class="material-symbols-outlined">smart_toy</span>
+      <span>Working Agent</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">ADK framework</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="5"></div>
+    <div class="gc-flow-box green reveal-scale" data-step="5">
+      <span class="material-symbols-outlined">play_arrow</span>
+      <span>Test &amp; Run</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">adk web</span>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 11: Section Break - Level 4 -->
+<div class="slide colored-bg gc-dark-blue-bg" id="slide-11">
+  <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <div class="section-number" style="color:rgba(255,255,255,0.4);">04</div>
+    <div class="section-title">BigQuery + Live Data Agents</div>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:55%;">Stand up a real dataset from the web, then wire it into your agent &mdash; all through Gemini CLI.</p>
+  </div>
+  <div class="reveal" data-step="1" style="margin-top:24px;">
+    <div class="live-demo-badge" style="background:rgba(255,255,255,0.2);"><span class="material-symbols-outlined" style="font-size:18px; color:#fff;">play_circle</span> LIVE DEMO</div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 12: BigQuery Setup -->
+<div class="slide" id="slide-12">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Step 1: <strong>BigQuery Environment</strong></h2>
+    <p class="subtext">Create a dataset with real data from the web &mdash; using natural language</p>
+  </div>
+  <div class="reveal-scale" data-step="1" style="margin-top:28px; width:100%;">
+    <div class="terminal-block">
+      <div><span class="terminal-prompt">$</span> gemini</div>
+      <div style="margin-top:12px;"><span class="terminal-string">"Create a BigQuery dataset called campus_it_data.</span></div>
+      <div><span class="terminal-string">&nbsp;Find real public data on university IT service desk metrics,</span></div>
+      <div><span class="terminal-string">&nbsp;network outage reports, and help desk ticket volumes.</span></div>
+      <div><span class="terminal-string">&nbsp;Load it into tables and make sure I can query it."</span></div>
+    </div>
+  </div>
+  <div class="gc-flow" style="margin-top:32px; width:100%; justify-content:center;">
+    <div class="gc-flow-box blue reveal-scale" data-step="2">
+      <span class="material-symbols-outlined">language</span>
+      <span>Web Data</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Public datasets, APIs</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="3"></div>
+    <div class="gc-flow-box red reveal-scale" data-step="3">
+      <span class="material-symbols-outlined">terminal</span>
+      <span>Gemini CLI</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Fetches &amp; structures</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="4"></div>
+    <div class="gc-flow-box green reveal-scale" data-step="4">
+      <span class="material-symbols-outlined">database</span>
+      <span>BigQuery</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Live, queryable tables</span>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
+    <div class="card-grid cols-3">
+      <div class="card blue-top" style="padding:16px; text-align:center;">
+        <h3 style="font-size:0.9rem;">tickets</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Help desk ticket history, categories, resolution times</p>
+      </div>
+      <div class="card red-top" style="padding:16px; text-align:center;">
+        <h3 style="font-size:0.9rem;">outages</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Network &amp; service outage logs with timestamps</p>
+      </div>
+      <div class="card green-top" style="padding:16px; text-align:center;">
+        <h3 style="font-size:0.9rem;">service_status</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Current service health, uptime, degradation events</p>
+      </div>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 13: Connect BigQuery to ADK Agent -->
+<div class="slide" id="slide-13">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Step 2: <strong>Connect to Your Agent</strong></h2>
+    <p class="subtext">Give your ADK agent access to live BigQuery data</p>
+  </div>
+  <div class="reveal-scale" data-step="1" style="margin-top:28px; width:100%;">
+    <div class="terminal-block">
+      <div><span class="terminal-prompt">$</span> gemini</div>
+      <div style="margin-top:12px;"><span class="terminal-string">"Add a BigQuery tool to my Central IT agent.</span></div>
+      <div><span class="terminal-string">&nbsp;It should be able to query the campus_it_data dataset</span></div>
+      <div><span class="terminal-string">&nbsp;to look up real ticket history, check outage patterns,</span></div>
+      <div><span class="terminal-string">&nbsp;and pull live service status when diagnosing issues."</span></div>
+    </div>
+  </div>
+  <div style="display:flex; gap:16px; margin-top:32px; width:100%; align-items:stretch;">
+    <div class="card purple-top reveal-scale" data-step="2" style="flex:1; padding:20px; text-align:center;">
+      <div class="gc-badge purple" style="margin:0 auto 12px;"><span class="material-symbols-outlined">smart_toy</span></div>
+      <h3 style="font-size:0.95rem;">ADK Agent</h3>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">Your Central IT help desk from Level 3</p>
+    </div>
+    <div style="display:flex; align-items:center;">
+      <div class="gc-flow-arrow reveal" data-step="3"></div>
+    </div>
+    <div class="card teal-top reveal-scale" data-step="3" style="flex:1; padding:20px; text-align:center;">
+      <div class="gc-badge teal" style="margin:0 auto 12px;"><span class="material-symbols-outlined">build</span></div>
+      <h3 style="font-size:0.95rem;">BigQuery Tool</h3>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">query_tickets(), check_outages(), get_service_status()</p>
+    </div>
+    <div style="display:flex; align-items:center;">
+      <div class="gc-flow-arrow reveal" data-step="4"></div>
+    </div>
+    <div class="card dark-blue-top reveal-scale" data-step="4" style="flex:1; padding:20px; text-align:center;">
+      <div class="gc-badge dark-blue" style="margin:0 auto 12px;"><span class="material-symbols-outlined">database</span></div>
+      <h3 style="font-size:0.95rem;">Live Data</h3>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">Real ticket history, outage logs, service health</p>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
+    <div style="background:var(--gc-surface); border-radius:var(--radius); padding:16px 24px; border-left:4px solid var(--gc-dark-blue);">
+      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-dark-blue);">rocket_launch</span> <strong style="color:var(--gc-text);">The payoff:</strong> Your agent now answers from real data, not mock responses. "How many Wi-Fi tickets this week?" returns actual numbers.</p>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 14: What We Covered -->
+<div class="slide" id="slide-14">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>Four Levels, <strong>Zero Code</strong></h2>
+    <p class="subtext">Every level is valuable. Everyone can start somewhere.</p>
+  </div>
+  <div class="card-grid cols-4" style="margin-top:32px;">
+    <div class="card blue-top reveal-scale" data-step="1" style="text-align:center; padding:24px;">
+      <div class="gc-badge blue lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">upload_file</span></div>
+      <h3 style="font-size:1.1rem;">Level 1</h3>
+      <p class="subtext" style="font-size:0.8rem; margin-top:4px;">File Analysis</p>
+      <div style="margin-top:12px; font-size:0.75rem; color:var(--gc-secondary);">
+        Upload &amp; analyze data in Gemini Enterprise
+      </div>
+    </div>
+    <div class="card green-top reveal-scale" data-step="2" style="text-align:center; padding:24px;">
+      <div class="gc-badge green lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">smart_toy</span></div>
+      <h3 style="font-size:1.1rem;">Level 2</h3>
+      <p class="subtext" style="font-size:0.8rem; margin-top:4px;">Custom Agents</p>
+      <div style="margin-top:12px; font-size:0.75rem; color:var(--gc-secondary);">
+        Build &amp; share AI assistants in the Gemini UI
+      </div>
+    </div>
+    <div class="card purple-top reveal-scale" data-step="3" style="text-align:center; padding:24px;">
+      <div class="gc-badge purple lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">terminal</span></div>
+      <h3 style="font-size:1.1rem;">Level 3</h3>
+      <p class="subtext" style="font-size:0.8rem; margin-top:4px;">ADK Agents</p>
+      <div style="margin-top:12px; font-size:0.75rem; color:var(--gc-secondary);">
+        Multi-agent systems via Gemini CLI
+      </div>
+    </div>
+    <div class="card dark-blue-top reveal-scale" data-step="4" style="text-align:center; padding:24px;">
+      <div class="gc-badge dark-blue lg" style="margin:0 auto 12px;"><span class="material-symbols-outlined">database</span></div>
+      <h3 style="font-size:1.1rem;">Level 4</h3>
+      <p class="subtext" style="font-size:0.8rem; margin-top:4px;">BigQuery + Agents</p>
+      <div style="margin-top:12px; font-size:0.75rem; color:var(--gc-secondary);">
+        Live data powering real agent decisions
+      </div>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
+    <div style="background:var(--gc-surface); border-radius:var(--radius); padding:16px 24px; border-left:4px solid var(--gc-purple);">
+      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-purple);">auto_awesome</span> <strong style="color:var(--gc-text);">The through-line:</strong> At every level, you described what you wanted in natural language. No Python, no YAML, no configuration files. Just English.</p>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 15: Thank You -->
+<div class="slide" id="slide-15">
+  <div class="gc-logo" style="font-size:16px;"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal-blur" data-step="0">
+    <h1 style="font-size: 3.5rem;">Thank you</h1>
+    <p class="subtext" style="margin-top:16px;">UAlbany Central IT &mdash; September 2026</p>
+  </div>
+  <div class="reveal" data-step="1" style="margin-top:40px;">
+    <div style="display:flex; gap:32px;">
+      <div class="gc-icon-row">
+        <div class="gc-badge blue" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">link</span></div>
+        <div>
+          <div class="gc-label" style="font-size:0.85rem;">Gemini CLI</div>
+          <div class="gc-sublabel" style="font-size:0.75rem;">Google Gemini CLI</div>
+        </div>
+      </div>
+      <div class="gc-icon-row">
+        <div class="gc-badge green" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">link</span></div>
+        <div>
+          <div class="gc-label" style="font-size:0.85rem;">ADK Docs</div>
+          <div class="gc-sublabel" style="font-size:0.75rem;">Agent Development Kit</div>
+        </div>
+      </div>
+      <div class="gc-icon-row">
+        <div class="gc-badge purple" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">link</span></div>
+        <div>
+          <div class="gc-label" style="font-size:0.85rem;">BigQuery</div>
+          <div class="gc-sublabel" style="font-size:0.75rem;">Google Cloud BigQuery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Progress dots + slide number -->
+<div class="progress" id="progress"></div>
+<div class="slide-number" id="slideNumber">1 / 15</div>
+
+<script>
+const totalSlides = 15;
+let current = 0;
+let revealStep = {};
+for (let i = 0; i < totalSlides; i++) revealStep[i] = -1;
+
+const progress = document.getElementById('progress');
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement('div');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', (e) => { e.stopPropagation(); goTo(i); });
+  progress.appendChild(dot);
+}
+
+function getMaxStep(slideIdx) {
+  const slide = document.querySelectorAll('.slide')[slideIdx];
+  const reveals = slide.querySelectorAll('[data-step]');
+  let max = -1;
+  reveals.forEach(r => { max = Math.max(max, parseInt(r.dataset.step)); });
+  return max;
+}
+
+function showReveals(slideIdx, upToStep, animate) {
+  const slide = document.querySelectorAll('.slide')[slideIdx];
+  const reveals = slide.querySelectorAll('[data-step]');
+  reveals.forEach(r => {
+    const step = parseInt(r.dataset.step);
+    if (step <= upToStep) {
+      r.classList.add(animate ? 'shown' : 'shown-fast');
+      r.classList.remove(animate ? 'shown-fast' : '');
+    } else {
+      r.classList.remove('shown', 'shown-fast');
+    }
+  });
+}
+
+function goTo(n, direction) {
+  const slides = document.querySelectorAll('.slide');
+  if (n === current && direction === undefined) {
+    const maxStep = getMaxStep(current);
+    revealStep[current] = maxStep;
+    showReveals(current, maxStep, false);
+    return;
+  }
+  slides[current].classList.remove('active');
+  progress.children[current].classList.remove('active');
+  current = Math.max(0, Math.min(n, totalSlides - 1));
+  slides[current].classList.add('active');
+  progress.children[current].classList.add('active');
+  document.getElementById('slideNumber').textContent = (current + 1) + ' / ' + totalSlides;
+
+  if (direction === 'back') {
+    const maxStep = getMaxStep(current);
+    revealStep[current] = maxStep;
+    showReveals(current, maxStep, false);
+  } else {
+    revealStep[current] = -1;
+    showReveals(current, -1, false);
+    advance();
+  }
+}
+
+function advance() {
+  const maxStep = getMaxStep(current);
+  if (revealStep[current] < maxStep) {
+    revealStep[current]++;
+    showReveals(current, revealStep[current], true);
+    return true;
+  }
+  return false;
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+    e.preventDefault();
+    if (!advance()) {
+      if (current < totalSlides - 1) goTo(current + 1, 'forward');
+    }
+  }
+  if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    if (current > 0) goTo(current - 1, 'back');
+  }
+  if (e.key === 'f') document.documentElement.requestFullscreen?.();
+});
+
+document.addEventListener('click', (e) => {
+  if (e.target.closest('.progress')) return;
+  if (e.detail === 2) { document.documentElement.requestFullscreen?.(); return; }
+  if (!advance()) {
+    if (current < totalSlides - 1) goTo(current + 1, 'forward');
+  }
+});
+
+let cursorTimer;
+document.addEventListener('mousemove', () => {
+  document.body.classList.add('cursor-visible');
+  clearTimeout(cursorTimer);
+  cursorTimer = setTimeout(() => document.body.classList.remove('cursor-visible'), 3000);
+});
+
+advance();
+</script>
+</body>
+</html>
