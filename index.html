@@ -204,7 +204,7 @@ strong { color: var(--gc-blue); font-weight: 700; }
       <div class="gc-badge blue"><span class="material-symbols-outlined">upload_file</span></div>
       <h3 style="font-size:1rem;">Level 1</h3>
       <p style="font-size:0.85rem; font-weight:700; margin-top:4px;">File Analysis</p>
-      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Upload data &amp; papers into Gemini Enterprise. Analyze, cross-reference, get insights.</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:8px; line-height:1.5;">Upload SUNY enrollment data, generate charts, cross-reference with IT Strategic Plan.</p>
       <div style="margin-top:8px;"><span class="label-upper" style="color:var(--gc-blue);">Gemini UI</span></div>
     </div>
     <div class="card green-top reveal-scale" data-step="2" style="padding:20px;">
@@ -243,7 +243,7 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="reveal" data-step="0">
     <div class="section-number" style="color:rgba(255,255,255,0.4);">01</div>
     <div class="section-title">File Analysis with Gemini Enterprise</div>
-    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:50%;">From raw data to research insight in 60 seconds &mdash; no code, no cleanup, no waiting.</p>
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.7); max-width:55%;">Upload a CSV, get charts and insights, cross-reference a strategy document &mdash; all in one conversation.</p>
   </div>
   <div class="reveal" data-step="1" style="margin-top:24px;">
     <div class="live-demo-badge" style="background:rgba(255,255,255,0.2);"><span class="material-symbols-outlined" style="font-size:18px; color:#fff;">play_circle</span> LIVE DEMO</div>
@@ -251,59 +251,113 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 4: File Analysis Scenario -->
+<!-- Slide 4: Demo Scenario Overview -->
 <div class="slide" id="slide-4">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
-    <h2>Demo Scenario: <strong>Biomedical Research</strong></h2>
-    <p class="subtext">A SUNY researcher with RNA-seq results and a CRISPR paper</p>
+    <h2>Demo: <strong>SUNY Enrollment Analysis</strong></h2>
+    <p class="subtext">Real data &rarr; Python charts &rarr; Google Search &rarr; IT Strategy cross-reference</p>
   </div>
-  <div class="gc-flow" style="margin-top:40px; width:100%; justify-content:center;">
+  <div class="gc-flow" style="margin-top:32px; width:100%; justify-content:center;">
     <div class="gc-flow-box blue reveal-scale" data-step="1">
       <span class="material-symbols-outlined">table_chart</span>
       <span>Upload CSV</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">RNA-seq data</span>
+      <span style="font-size:0.65rem; opacity:0.8; font-weight:400;">SUNY enrollment data</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="2"></div>
     <div class="gc-flow-box green reveal-scale" data-step="2">
-      <span class="material-symbols-outlined">psychology</span>
-      <span>Analyze</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Top genes, pathways</span>
+      <span class="material-symbols-outlined">bar_chart</span>
+      <span>Matplotlib</span>
+      <span style="font-size:0.65rem; opacity:0.8; font-weight:400;">Trends &amp; peer charts</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="3"></div>
     <div class="gc-flow-box yellow reveal-scale" data-step="3">
-      <span class="material-symbols-outlined">description</span>
-      <span>Upload PDF</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">CRISPR paper</span>
+      <span class="material-symbols-outlined">travel_explore</span>
+      <span>Google Search</span>
+      <span style="font-size:0.65rem; opacity:0.8; font-weight:400;">Explain the anomaly</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="4"></div>
     <div class="gc-flow-box red reveal-scale" data-step="4">
-      <span class="material-symbols-outlined">compare_arrows</span>
-      <span>Cross-Reference</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">CRISPR candidates</span>
+      <span class="material-symbols-outlined">description</span>
+      <span>Upload Strategy</span>
+      <span style="font-size:0.65rem; opacity:0.8; font-weight:400;">IT Strategic Plan</span>
+    </div>
+    <div class="gc-flow-arrow reveal" data-step="5"></div>
+    <div class="gc-flow-box dark-blue reveal-scale" data-step="5">
+      <span class="material-symbols-outlined">apartment</span>
+      <span>CIO Brief</span>
+      <span style="font-size:0.65rem; opacity:0.8; font-weight:400;">Executive synthesis</span>
     </div>
   </div>
-  <div class="reveal" data-step="5" style="margin-top:40px; width:100%;">
-    <div style="display:flex; gap:24px; flex-wrap:wrap;">
-      <div class="gc-icon-row">
-        <div class="gc-badge blue" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
-        <div><div class="gc-label" style="font-size:0.9rem;">Identifies significant genes by p-value</div></div>
+  <div class="reveal" data-step="6" style="margin-top:28px; width:100%;">
+    <div class="card-grid cols-3">
+      <div class="card blue-top" style="padding:16px;">
+        <h3 style="font-size:0.85rem;"><span class="material-symbols-outlined" style="font-size:16px; vertical-align:middle; color:var(--gc-blue);">database</span> The Data</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:6px; line-height:1.6;">NY Open Data: SUNY enrollment by campus, 2011&ndash;2024. 924 rows, 63 institutions, 4 enrollment categories.</p>
       </div>
-      <div class="gc-icon-row">
-        <div class="gc-badge green" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
-        <div><div class="gc-label" style="font-size:0.9rem;">Flags potential batch effects</div></div>
+      <div class="card green-top" style="padding:16px;">
+        <h3 style="font-size:0.85rem;"><span class="material-symbols-outlined" style="font-size:16px; vertical-align:middle; color:var(--gc-green);">insights</span> Key Finding</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:6px; line-height:1.6;">Albany grew only <strong style="color:var(--gc-text);">+2.6%</strong> since 2011 vs peers at +10&ndash;28%. But 2024 shows a <strong style="color:var(--gc-text);">+4% recovery</strong>.</p>
       </div>
-      <div class="gc-icon-row">
-        <div class="gc-badge red" style="width:36px; height:36px;"><span class="material-symbols-outlined" style="font-size:18px;">check_circle</span></div>
-        <div><div class="gc-label" style="font-size:0.9rem;">Synthesizes across multiple uploads</div></div>
+      <div class="card red-top" style="padding:16px;">
+        <h3 style="font-size:0.85rem;"><span class="material-symbols-outlined" style="font-size:16px; vertical-align:middle; color:var(--gc-red);">fact_check</span> The Explanation</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:6px; line-height:1.6;">Google Search finds: <strong style="color:var(--gc-text);">40% transfer increase</strong> &mdash; Saint Rose teach-out + community college partnerships.</p>
       </div>
     </div>
   </div>
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 5: Section Break - Level 2 -->
-<div class="slide colored-bg gc-green-bg" id="slide-5">
+<!-- Slide 5: Demo Prompts -->
+<div class="slide" id="slide-5">
+  <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
+  <div class="reveal" data-step="0">
+    <h2>What We'll <strong>Ask Gemini</strong></h2>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; width:100%;">
+    <div class="card blue-top reveal-scale" data-step="1" style="padding:16px 20px;">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <div class="gc-badge blue" style="width:28px; height:28px; margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:14px;">bar_chart</span></div>
+        <h3 style="font-size:0.8rem;">1. Analyze &amp; Visualize</h3>
+      </div>
+      <p style="font-size:0.7rem; color:var(--gc-secondary); line-height:1.6; font-style:italic;">&ldquo;Analyze Albany and visualize what matters.&rdquo;</p>
+      <p style="font-size:0.65rem; color:var(--gc-blue); margin-top:6px; font-weight:600;">Gemini writes Python &rarr; Matplotlib charts</p>
+    </div>
+    <div class="card green-top reveal-scale" data-step="2" style="padding:16px 20px;">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <div class="gc-badge green" style="width:28px; height:28px; margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:14px;">compare</span></div>
+        <h3 style="font-size:0.8rem;">2. Peer Comparison</h3>
+      </div>
+      <p style="font-size:0.7rem; color:var(--gc-secondary); line-height:1.6; font-style:italic;">&ldquo;Normalize Albany, Binghamton, Buffalo &amp; Stony Brook to 2011=100.&rdquo;</p>
+      <p style="font-size:0.65rem; color:var(--gc-green); margin-top:6px; font-weight:600;">Reveals Albany&rsquo;s flat trajectory vs peers</p>
+    </div>
+    <div class="card yellow-top reveal-scale" data-step="3" style="padding:16px 20px;">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <div class="gc-badge yellow" style="width:28px; height:28px; margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:14px;">travel_explore</span></div>
+        <h3 style="font-size:0.8rem;">3. Investigate the 2024 Anomaly</h3>
+      </div>
+      <p style="font-size:0.7rem; color:var(--gc-secondary); line-height:1.6; font-style:italic;">&ldquo;Use Google Search to investigate. Separate what the data proves from what sources report.&rdquo;</p>
+      <p style="font-size:0.65rem; color:#886600; margin-top:6px; font-weight:600;">Finds Saint Rose teach-out, 40% transfer growth</p>
+    </div>
+    <div class="card red-top reveal-scale" data-step="4" style="padding:16px 20px;">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <div class="gc-badge red" style="width:28px; height:28px; margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:14px;">compare_arrows</span></div>
+        <h3 style="font-size:0.8rem;">4. Cross-Reference IT Strategy</h3>
+      </div>
+      <p style="font-size:0.7rem; color:var(--gc-secondary); line-height:1.6; font-style:italic;">&ldquo;Upload IT Strategic Plan. Which initiatives connect to these enrollment findings?&rdquo;</p>
+      <p style="font-size:0.65rem; color:var(--gc-red); margin-top:6px; font-weight:600;">Links enrollment &rarr; analytics modernization</p>
+    </div>
+  </div>
+  <div class="reveal" data-step="5" style="margin-top:16px; width:100%;">
+    <div style="background:var(--gc-surface); border-radius:var(--radius); padding:14px 24px; border-left:4px solid var(--gc-blue);">
+      <p style="font-size:0.85rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-blue);">auto_awesome</span> <strong style="color:var(--gc-text);">Capabilities shown:</strong> CSV analysis &bull; Python code execution &bull; Pandas &bull; Matplotlib charts &bull; Google Search with citations &bull; document cross-referencing &bull; executive synthesis</p>
+    </div>
+  </div>
+  <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
+</div>
+
+<!-- Slide 6: Section Break - Level 2 -->
+<div class="slide colored-bg gc-green-bg" id="slide-6">
   <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
   <div class="reveal" data-step="0">
     <div class="section-number" style="color:rgba(255,255,255,0.4);">02</div>
@@ -316,8 +370,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 6: What are Custom Agents -->
-<div class="slide" id="slide-6">
+<!-- Slide 7: What are Custom Agents -->
+<div class="slide" id="slide-7">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>What are <strong>Custom Agents</strong>?</h2>
@@ -352,8 +406,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 7: Section Break - Level 3 -->
-<div class="slide colored-bg gc-purple-bg" id="slide-7">
+<!-- Slide 8: Section Break - Level 3 -->
+<div class="slide colored-bg gc-purple-bg" id="slide-8">
   <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
   <div class="reveal" data-step="0">
     <div class="section-number" style="color:rgba(255,255,255,0.4);">03</div>
@@ -366,8 +420,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 8: Five Core Concepts (KEPT) -->
-<div class="slide" id="slide-8">
+<!-- Slide 9: Five Core Concepts -->
+<div class="slide" id="slide-9">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Five Core <strong>ADK Concepts</strong></h2>
@@ -408,8 +462,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 9: How Gemini CLI Builds Agents -->
-<div class="slide" id="slide-9">
+<!-- Slide 10: How Gemini CLI Builds Agents -->
+<div class="slide" id="slide-10">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>You Describe It. <strong>Gemini Builds It.</strong></h2>
@@ -458,8 +512,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 10: Section Break - Level 4 -->
-<div class="slide colored-bg gc-dark-blue-bg" id="slide-10">
+<!-- Slide 11: Section Break - Level 4 -->
+<div class="slide colored-bg gc-dark-blue-bg" id="slide-11">
   <div class="gc-logo"><span style="color:#fff">G</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:rgba(255,255,255,0.8)">o</span><span style="color:#fff">g</span><span style="color:rgba(255,255,255,0.8)">l</span><span style="color:rgba(255,255,255,0.8)">e</span> <span style="color:rgba(255,255,255,0.6)">Cloud</span></div>
   <div class="reveal" data-step="0">
     <div class="section-number" style="color:rgba(255,255,255,0.4);">04</div>
@@ -472,8 +526,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 11: BigQuery Setup -->
-<div class="slide" id="slide-11">
+<!-- Slide 12: BigQuery Setup -->
+<div class="slide" id="slide-12">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Step 1: <strong>BigQuery Environment</strong></h2>
@@ -526,8 +580,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 12: Connect BigQuery to ADK Agent -->
-<div class="slide" id="slide-12">
+<!-- Slide 13: Connect BigQuery to ADK Agent -->
+<div class="slide" id="slide-13">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Step 2: <strong>Connect to Your Agent</strong></h2>
@@ -573,8 +627,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 13: What We Covered -->
-<div class="slide" id="slide-13">
+<!-- Slide 14: What We Covered -->
+<div class="slide" id="slide-14">
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Four Levels, <strong>Zero Code</strong></h2>
@@ -622,8 +676,8 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
 </div>
 
-<!-- Slide 14: Thank You -->
-<div class="slide" id="slide-14">
+<!-- Slide 15: Thank You -->
+<div class="slide" id="slide-15">
   <div class="gc-logo" style="font-size:16px;"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal-blur" data-step="0">
     <h1 style="font-size: 3.5rem;">Thank you</h1>
@@ -659,10 +713,10 @@ strong { color: var(--gc-blue); font-weight: 700; }
 
 <!-- Progress dots + slide number -->
 <div class="progress" id="progress"></div>
-<div class="slide-number" id="slideNumber">1 / 14</div>
+<div class="slide-number" id="slideNumber">1 / 15</div>
 
 <script>
-const totalSlides = 14;
+const totalSlides = 15;
 let current = 0;
 let revealStep = {};
 for (let i = 0; i < totalSlides; i++) revealStep[i] = -1;

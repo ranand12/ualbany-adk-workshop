@@ -1,0 +1,925 @@
+"Year","Term","College or Institution Type","College or Institution Name","Undergraduate Full-Time","Undergraduate Part-Time","Graduate Full-Time","Graduate Part-Time"
+"2011","Fall","Community Colleges","Genesee","3,611","3,589",,
+"2021","Fall","Community Colleges","Herkimer County","1,132","892",,
+"2020","Fall","Community Colleges","Herkimer County","1,189","1,035",,
+"2019","Fall","Community Colleges","Herkimer County","1,268","1,128",,
+"2018","Fall","Community Colleges","Herkimer County","1,396","1,002",,
+"2017","Fall","Community Colleges","Herkimer County","1,636","996",,
+"2016","Fall","Community Colleges","Herkimer County","1,681","964",,
+"2015","Fall","Community Colleges","Herkimer County","1,752","1,268",,
+"2014","Fall","Community Colleges","Herkimer County","1,842","1,417",,
+"2013","Fall","Community Colleges","Herkimer County","2,081","1,134",,
+"2012","Fall","Community Colleges","Herkimer County","2,242","1,221",,
+"2011","Fall","Community Colleges","Herkimer County","2,470","1,209",,
+"2021","Fall","Community Colleges","Hudson Valley","4,317","4,137",,
+"2020","Fall","Community Colleges","Hudson Valley","4,545","4,389",,
+"2019","Fall","Community Colleges","Hudson Valley","5,401","5,015",,
+"2018","Fall","Community Colleges","Hudson Valley","5,636","5,260",,
+"2017","Fall","Community Colleges","Hudson Valley","5,802","5,218",,
+"2016","Fall","Community Colleges","Hudson Valley","5,880","5,707",,
+"2021","Fall","SUNY Total",,"222,560","103,450","27,159","16,945"
+"2020","Fall","SUNY Total",,"241,742","109,147","25,614","17,717"
+"2019","Fall","SUNY Total",,"259,869","113,079","25,436","17,188"
+"2018","Fall","SUNY Total",,"268,594","113,894","25,008","16,555"
+"2017","Fall","SUNY Total",,"275,069","116,347","24,599","15,840"
+"2016","Fall","SUNY Total",,"275,982","119,835","24,219","16,102"
+"2015","Fall","SUNY Total",,"282,503","120,219","24,330","15,888"
+"2014","Fall","SUNY Total",,"289,567","124,737","24,132","16,403"
+"2013","Fall","SUNY Total",,"295,021","123,896","24,518","16,115"
+"2012","Fall","SUNY Total",,"296,187","125,529","23,610","16,490"
+"2011","Fall","SUNY Total",,"300,602","126,800","23,301","17,303"
+"2021","Fall","Doctoral Degree Granting Institutions","Albany","11,792","862","2,168","2,253"
+"2020","Fall","Doctoral Degree Granting Institutions","Albany","12,203","979","2,289","2,217"
+"2019","Fall","Doctoral Degree Granting Institutions","Albany","12,568","718","2,108","2,150"
+"2018","Fall","Doctoral Degree Granting Institutions","Albany","12,899","699","2,157","2,189"
+"2017","Fall","Doctoral Degree Granting Institutions","Albany","12,740","768","2,109","2,126"
+"2016","Fall","Doctoral Degree Granting Institutions","Albany","12,421","718","2,099","2,135"
+"2015","Fall","Doctoral Degree Granting Institutions","Albany","12,223","684","2,218","2,053"
+"2014","Fall","Doctoral Degree Granting Institutions","Albany","12,191","738","2,218","2,126"
+"2013","Fall","Doctoral Degree Granting Institutions","Albany","12,055","767","2,343","2,173"
+"2012","Fall","Doctoral Degree Granting Institutions","Albany","12,064","814","2,179","2,255"
+"2011","Fall","Doctoral Degree Granting Institutions","Albany","11,925","830","2,117","2,242"
+"2021","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","406","15","61","11"
+"2020","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","430","12","63","9"
+"2019","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","482","14","72","11"
+"2018","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","516","20","73","7"
+"2017","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","481","21","54","13"
+"2016","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","500","10","56","15"
+"2015","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","551","16","57","3"
+"2014","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","539","16","77","13"
+"2013","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","593","18","71","21"
+"2012","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","609","12","63","17"
+"2011","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","629","17","71","14"
+"2021","Fall","Doctoral Degree Granting Institutions","Binghamton","13,966","341","2,239","1,509"
+"2020","Fall","Doctoral Degree Granting Institutions","Binghamton","13,889","444","2,165","1,649"
+"2019","Fall","Doctoral Degree Granting Institutions","Binghamton","13,845","323","2,320","1,641"
+"2018","Fall","Doctoral Degree Granting Institutions","Binghamton","13,630","391","2,125","1,622"
+"2017","Fall","Doctoral Degree Granting Institutions","Binghamton","13,347","377","2,105","1,511"
+"2016","Fall","Doctoral Degree Granting Institutions","Binghamton","13,185","447","2,153","1,507"
+"2015","Fall","Doctoral Degree Granting Institutions","Binghamton","13,054","437","2,059","1,363"
+"2014","Fall","Doctoral Degree Granting Institutions","Binghamton","12,908","504","1,944","1,339"
+"2013","Fall","Doctoral Degree Granting Institutions","Binghamton","12,559","438","1,824","1,256"
+"2012","Fall","Doctoral Degree Granting Institutions","Binghamton","11,904","452","1,682","1,270"
+"2011","Fall","Doctoral Degree Granting Institutions","Binghamton","11,464","397","1,566","1,319"
+"2021","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","19,773","1,696","7,506","3,359"
+"2020","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","20,435","1,872","6,164","3,877"
+"2019","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","20,401","1,524","6,361","3,641"
+"2018","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","19,941","1,671","6,535","3,361"
+"2017","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","19,401","1,619","6,306","3,322"
+"2016","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,824","1,588","6,354","3,418"
+"2015","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,452","1,501","6,406","3,449"
+"2014","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,166","1,716","6,422","3,691"
+"2013","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,091","1,740","6,725","3,294"
+"2012","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","17,766","1,893","6,270","3,200"
+"2011","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","17,664","1,670","6,048","3,478"
+"2021","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,933","56","2,600","138"
+"2020","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,758","0","2,443","0"
+"2019","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,877","1","2,354","0"
+"2018","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,968","0","2,215","0"
+"2017","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,852","0","2,108","0"
+"2016","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,718","0","1,977","0"
+"2015","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,599","0","1,991","0"
+"2014","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,749","0","1,918","0"
+"2013","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,741","0","2,042","0"
+"2012","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,653","0","1,875","0"
+"2011","Fall","Doctoral Degree Granting Institutions","Cornell Stat","5,608","0","1,840","0"
+"2021","Fall","Doctoral Degree Granting Institutions","Downstate Medical","174","19","1,531","393"
+"2020","Fall","Doctoral Degree Granting Institutions","Downstate Medical","176","11","1,548","383"
+"2019","Fall","Doctoral Degree Granting Institutions","Downstate Medical","178","4","1,405","312"
+"2018","Fall","Doctoral Degree Granting Institutions","Downstate Medical","193","18","1,335","300"
+"2017","Fall","Doctoral Degree Granting Institutions","Downstate Medical","213","14","1,256","309"
+"2016","Fall","Doctoral Degree Granting Institutions","Downstate Medical","246","92","1,186","315"
+"2015","Fall","Doctoral Degree Granting Institutions","Downstate Medical","160","188","1,141","369"
+"2014","Fall","Doctoral Degree Granting Institutions","Downstate Medical","216","128","1,149","372"
+"2013","Fall","Doctoral Degree Granting Institutions","Downstate Medical","235","123","1,132","375"
+"2012","Fall","Doctoral Degree Granting Institutions","Downstate Medical","213","139","1,071","376"
+"2011","Fall","Doctoral Degree Granting Institutions","Downstate Medical","184","165","1,037","365"
+"2021","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,278","360","192","182"
+"2020","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,625","129","225","148"
+"2019","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,747","65","221","176"
+"2018","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,776","49","231","164"
+"2017","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,737","54","248","174"
+"2016","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,711","40","255","180"
+"2015","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,726","29","281","186"
+"2014","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,671","57","285","187"
+"2013","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,647","55","319","208"
+"2012","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,661","43","323","228"
+"2011","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,628","539","319","194"
+"2021","Fall","Doctoral Degree Granting Institutions","Optometry",,,"407","0"
+"2020","Fall","Doctoral Degree Granting Institutions","Optometry",,,"402","0"
+"2019","Fall","Doctoral Degree Granting Institutions","Optometry",,,"409","0"
+"2018","Fall","Doctoral Degree Granting Institutions","Optometry",,,"408","0"
+"2017","Fall","Doctoral Degree Granting Institutions","Optometry",,,"412","1"
+"2016","Fall","Doctoral Degree Granting Institutions","Optometry",,,"400","2"
+"2015","Fall","Doctoral Degree Granting Institutions","Optometry",,,"383","0"
+"2014","Fall","Doctoral Degree Granting Institutions","Optometry",,,"363","0"
+"2013","Fall","Doctoral Degree Granting Institutions","Optometry",,,"340","3"
+"2012","Fall","Doctoral Degree Granting Institutions","Optometry",,,"334","2"
+"2011","Fall","Doctoral Degree Granting Institutions","Optometry",,,"315","2"
+"2021","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,678","1,299","5,827","2,822"
+"2020","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,777","1,423","5,467","3,343"
+"2019","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,622","1,210","5,520","3,391"
+"2018","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,293","1,181","5,416","3,346"
+"2017","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,142","1,151","5,621","3,042"
+"2016","Fall","Doctoral Degree Granting Institutions","Stony Brook","15,769","1,167","5,442","3,305"
+"2015","Fall","Doctoral Degree Granting Institutions","Stony Brook","15,575","1,108","5,372","3,105"
+"2014","Fall","Doctoral Degree Granting Institutions","Stony Brook","15,189","1,095","5,284","2,883"
+"2013","Fall","Doctoral Degree Granting Institutions","Stony Brook","14,754","1,099","5,152","2,995"
+"2012","Fall","Doctoral Degree Granting Institutions","Stony Brook","14,445","1,271","5,237","2,872"
+"2011","Fall","Doctoral Degree Granting Institutions","Stony Brook","14,485","1,300","5,137","2,998"
+"2021","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,734","301","266","547"
+"2015","Fall","Community Colleges","Hudson Valley","6,253","5,543",,
+"2020","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,903","336","261","544"
+"2019","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,903","313","262","528"
+"2018","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,920","336","225","542"
+"2017","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,859","320","248","485"
+"2016","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,697","306","196","497"
+"2015","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,741","324","165","549"
+"2014","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,646","389","194","509"
+"2013","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,425","379","195","481"
+"2012","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,272","421","171","513"
+"2011","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,353","511","151","493"
+"2021","Fall","Doctoral Degree Granting Institutions","Upstate Medical","131","64","1,220","130"
+"2020","Fall","Doctoral Degree Granting Institutions","Upstate Medical","145","60","1,199","124"
+"2019","Fall","Doctoral Degree Granting Institutions","Upstate Medical","153","85","1,219","131"
+"2018","Fall","Doctoral Degree Granting Institutions","Upstate Medical","162","87","1,176","122"
+"2017","Fall","Doctoral Degree Granting Institutions","Upstate Medical","163","87","1,102","132"
+"2016","Fall","Doctoral Degree Granting Institutions","Upstate Medical","154","57","1,161","119"
+"2015","Fall","Doctoral Degree Granting Institutions","Upstate Medical","160","59","1,103","158"
+"2014","Fall","Doctoral Degree Granting Institutions","Upstate Medical","174","61","1,066","215"
+"2013","Fall","Doctoral Degree Granting Institutions","Upstate Medical","209","77","1,063","268"
+"2012","Fall","Doctoral Degree Granting Institutions","Upstate Medical","211","91","1,058","275"
+"2011","Fall","Doctoral Degree Granting Institutions","Upstate Medical","213","83","1,040","253"
+"2021","Fall","Doctoral Degree Granting Institutions",,"71,865","5,013","24,017","11,344"
+"2020","Fall","Doctoral Degree Granting Institutions",,"73,341","5,266","22,226","12,294"
+"2019","Fall","Doctoral Degree Granting Institutions",,"73,776","4,257","22,251","11,981"
+"2018","Fall","Doctoral Degree Granting Institutions",,"73,298","4,452","21,896","11,653"
+"2017","Fall","Doctoral Degree Granting Institutions",,"71,935","4,411","21,569","11,115"
+"2016","Fall","Doctoral Degree Granting Institutions",,"70,225","4,425","21,279","11,493"
+"2015","Fall","Doctoral Degree Granting Institutions",,"69,241","4,346","21,176","11,235"
+"2014","Fall","Doctoral Degree Granting Institutions",,"68,449","4,704","20,920","11,335"
+"2013","Fall","Doctoral Degree Granting Institutions",,"67,309","4,696","21,206","11,074"
+"2012","Fall","Doctoral Degree Granting Institutions",,"65,798","5,136","20,263","11,008"
+"2011","Fall","Doctoral Degree Granting Institutions",,"65,153","5,512","19,641","11,358"
+"2021","Fall","Comprehensive Colleges","Brockport","4,880","834","342","935"
+"2020","Fall","Comprehensive Colleges","Brockport","5,482","807","356","947"
+"2019","Fall","Comprehensive Colleges","Brockport","5,960","713","349","902"
+"2018","Fall","Comprehensive Colleges","Brockport","6,343","714","353","877"
+"2017","Fall","Comprehensive Colleges","Brockport","6,419","761","353","780"
+"2016","Fall","Comprehensive Colleges","Brockport","6,375","753","345","770"
+"2015","Fall","Comprehensive Colleges","Brockport","6,353","716","373","719"
+"2014","Fall","Comprehensive Colleges","Brockport","6,304","736","358","708"
+"2013","Fall","Comprehensive Colleges","Brockport","6,411","679","318","720"
+"2012","Fall","Comprehensive Colleges","Brockport","6,444","689","367","771"
+"2011","Fall","Comprehensive Colleges","Brockport","6,454","712","365","882"
+"2021","Fall","Comprehensive Colleges","Buffalo State","5,384","763","383","643"
+"2020","Fall","Comprehensive Colleges","Buffalo State","6,582","727","451","579"
+"2019","Fall","Comprehensive Colleges","Buffalo State","6,916","731","421","590"
+"2018","Fall","Comprehensive Colleges","Buffalo State","7,278","804","416","620"
+"2017","Fall","Comprehensive Colleges","Buffalo State","7,665","862","378","611"
+"2016","Fall","Comprehensive Colleges","Buffalo State","7,598","884","416","577"
+"2015","Fall","Comprehensive Colleges","Buffalo State","8,137","1,050","442","701"
+"2014","Fall","Comprehensive Colleges","Buffalo State","8,326","1,149","514","1,094"
+"2013","Fall","Comprehensive Colleges","Buffalo State","8,293","1,062","506","1,230"
+"2012","Fall","Comprehensive Colleges","Buffalo State","8,606","1,141","516","1,518"
+"2011","Fall","Comprehensive Colleges","Buffalo State","8,811","1,201","511","1,681"
+"2021","Fall","Comprehensive Colleges","Cortland","5,816","168","249","425"
+"2020","Fall","Comprehensive Colleges","Cortland","6,093","163","274","302"
+"2019","Fall","Comprehensive Colleges","Cortland","6,170","125","209","330"
+"2018","Fall","Comprehensive Colleges","Cortland","6,218","125","173","342"
+"2017","Fall","Comprehensive Colleges","Cortland","6,196","150","197","370"
+"2016","Fall","Comprehensive Colleges","Cortland","6,187","117","208","388"
+"2015","Fall","Comprehensive Colleges","Cortland","6,179","104","242","401"
+"2014","Fall","Comprehensive Colleges","Cortland","6,203","114","227","414"
+"2013","Fall","Comprehensive Colleges","Cortland","6,281","119","256","454"
+"2012","Fall","Comprehensive Colleges","Cortland","6,228","117","250","503"
+"2011","Fall","Comprehensive Colleges","Cortland","6,241","130","370","590"
+"2021","Fall","Comprehensive Colleges","Empire State","3,269","4,657","144","1,392"
+"2020","Fall","Comprehensive Colleges","Empire State","3,653","5,492","155","1,424"
+"2019","Fall","Comprehensive Colleges","Empire State","3,267","5,828","120","1,225"
+"2018","Fall","Comprehensive Colleges","Empire State","3,599","5,728","89","1,008"
+"2017","Fall","Comprehensive Colleges","Empire State","3,772","6,038","89","1,078"
+"2016","Fall","Comprehensive Colleges","Empire State","3,841","6,348","80","1,046"
+"2015","Fall","Comprehensive Colleges","Empire State","4,278","6,529","81","990"
+"2014","Fall","Comprehensive Colleges","Empire State","4,249","6,624","73","1,006"
+"2013","Fall","Comprehensive Colleges","Empire State","4,218","6,609","91","905"
+"2012","Fall","Comprehensive Colleges","Empire State","4,341","6,777","87","823"
+"2011","Fall","Comprehensive Colleges","Empire State","4,346","6,644","86","751"
+"2021","Fall","Comprehensive Colleges","Fredonia","3,449","103","129","83"
+"2020","Fall","Comprehensive Colleges","Fredonia","3,738","115","129","73"
+"2019","Fall","Comprehensive Colleges","Fredonia","4,132","89","141","84"
+"2018","Fall","Comprehensive Colleges","Fredonia","4,314","117","151","73"
+"2017","Fall","Comprehensive Colleges","Fredonia","4,281","112","153","84"
+"2016","Fall","Comprehensive Colleges","Fredonia","4,256","124","143","80"
+"2015","Fall","Comprehensive Colleges","Fredonia","4,458","124","153","107"
+"2014","Fall","Comprehensive Colleges","Fredonia","4,806","130","189","90"
+"2013","Fall","Comprehensive Colleges","Fredonia","4,945","147","204","95"
+"2012","Fall","Comprehensive Colleges","Fredonia","5,074","157","175","115"
+"2011","Fall","Comprehensive Colleges","Fredonia","5,237","150","182","151"
+"2021","Fall","Comprehensive Colleges","Geneseo","4,291","173","38","33"
+"2020","Fall","Comprehensive Colleges","Geneseo","4,627","202","48","34"
+"2019","Fall","Comprehensive Colleges","Geneseo","5,133","141","48","56"
+"2018","Fall","Comprehensive Colleges","Geneseo","5,351","143","48","46"
+"2017","Fall","Comprehensive Colleges","Geneseo","5,420","104","47","49"
+"2016","Fall","Comprehensive Colleges","Geneseo","5,369","115","33","57"
+"2015","Fall","Comprehensive Colleges","Geneseo","5,447","119","50","60"
+"2014","Fall","Comprehensive Colleges","Geneseo","5,422","98","46","59"
+"2013","Fall","Comprehensive Colleges","Geneseo","5,358","125","65","68"
+"2012","Fall","Comprehensive Colleges","Geneseo","5,260","116","70","93"
+"2011","Fall","Comprehensive Colleges","Geneseo","5,352","124","93","95"
+"2021","Fall","Comprehensive Colleges","New Paltz","5,622","634","431","388"
+"2020","Fall","Comprehensive Colleges","New Paltz","5,918","679","484","408"
+"2019","Fall","Comprehensive Colleges","New Paltz","6,291","516","488","462"
+"2018","Fall","Comprehensive Colleges","New Paltz","6,190","502","449","467"
+"2017","Fall","Comprehensive Colleges","New Paltz","6,235","498","403","429"
+"2016","Fall","Comprehensive Colleges","New Paltz","6,198","519","434","477"
+"2015","Fall","Comprehensive Colleges","New Paltz","6,165","534","527","525"
+"2014","Fall","Comprehensive Colleges","New Paltz","6,097","545","484","566"
+"2013","Fall","Comprehensive Colleges","New Paltz","6,060","510","478","530"
+"2012","Fall","Comprehensive Colleges","New Paltz","6,091","482","498","584"
+"2011","Fall","Comprehensive Colleges","New Paltz","6,194","505","525","633"
+"2021","Fall","Comprehensive Colleges","Old Westbury","3,399","634","149","199"
+"2020","Fall","Comprehensive Colleges","Old Westbury","3,959","700","179","169"
+"2019","Fall","Comprehensive Colleges","Old Westbury","4,131","678","146","171"
+"2018","Fall","Comprehensive Colleges","Old Westbury","4,143","641","168","135"
+"2017","Fall","Comprehensive Colleges","Old Westbury","4,056","579","164","111"
+"2016","Fall","Comprehensive Colleges","Old Westbury","3,633","611","126","93"
+"2015","Fall","Comprehensive Colleges","Old Westbury","3,522","603","134","94"
+"2014","Fall","Comprehensive Colleges","Old Westbury","3,670","645","118","71"
+"2013","Fall","Comprehensive Colleges","Old Westbury","3,558","603","99","107"
+"2012","Fall","Comprehensive Colleges","Old Westbury","3,610","607","106","99"
+"2011","Fall","Comprehensive Colleges","Old Westbury","3,561","669","131","98"
+"2021","Fall","Comprehensive Colleges","Oneonta","5,238","142","167","371"
+"2020","Fall","Comprehensive Colleges","Oneonta","6,059","131","149","379"
+"2019","Fall","Comprehensive Colleges","Oneonta","5,942","122","124","340"
+"2018","Fall","Comprehensive Colleges","Oneonta","5,942","104","127","370"
+"2017","Fall","Comprehensive Colleges","Oneonta","5,828","112","140","278"
+"2016","Fall","Comprehensive Colleges","Oneonta","5,608","122","122","204"
+"2015","Fall","Comprehensive Colleges","Oneonta","5,754","96","122","147"
+"2014","Fall","Comprehensive Colleges","Oneonta","5,727","109","121","144"
+"2013","Fall","Comprehensive Colleges","Oneonta","5,675","125","133","101"
+"2012","Fall","Comprehensive Colleges","Oneonta","5,709","128","116","88"
+"2011","Fall","Comprehensive Colleges","Oneonta","5,738","114","92","79"
+"2021","Fall","Comprehensive Colleges","Oswego","5,670","465","368","555"
+"2020","Fall","Comprehensive Colleges","Oswego","6,211","462","366","597"
+"2019","Fall","Comprehensive Colleges","Oswego","6,561","359","319","591"
+"2018","Fall","Comprehensive Colleges","Oswego","6,767","314","337","568"
+"2017","Fall","Comprehensive Colleges","Oswego","6,836","289","362","539"
+"2016","Fall","Comprehensive Colleges","Oswego","6,868","282","317","537"
+"2015","Fall","Comprehensive Colleges","Oswego","6,778","326","308","525"
+"2014","Fall","Comprehensive Colleges","Oswego","6,880","313","332","509"
+"2013","Fall","Comprehensive Colleges","Oswego","6,954","374","352","437"
+"2012","Fall","Comprehensive Colleges","Oswego","6,815","336","331","439"
+"2011","Fall","Comprehensive Colleges","Oswego","6,992","387","372","465"
+"2021","Fall","Comprehensive Colleges","Plattsburgh","3,860","463","250","165"
+"2020","Fall","Comprehensive Colleges","Plattsburgh","4,185","495","266","163"
+"2019","Fall","Comprehensive Colleges","Plattsburgh","4,420","451","247","140"
+"2018","Fall","Comprehensive Colleges","Plattsburgh","4,853","444","270","137"
+"2017","Fall","Comprehensive Colleges","Plattsburgh","4,894","457","227","141"
+"2016","Fall","Comprehensive Colleges","Plattsburgh","4,822","393","191","114"
+"2015","Fall","Comprehensive Colleges","Plattsburgh","4,960","417","207","134"
+"2014","Fall","Comprehensive Colleges","Plattsburgh","5,143","422","248","155"
+"2013","Fall","Comprehensive Colleges","Plattsburgh","5,186","453","272","140"
+"2012","Fall","Comprehensive Colleges","Plattsburgh","5,318","388","296","165"
+"2011","Fall","Comprehensive Colleges","Plattsburgh","5,438","384","313","215"
+"2021","Fall","Comprehensive Colleges","Potsdam","2,251","101","147","108"
+"2020","Fall","Comprehensive Colleges","Potsdam","2,705","137","157","85"
+"2019","Fall","Comprehensive Colleges","Potsdam","2,977","86","196","80"
+"2018","Fall","Comprehensive Colleges","Potsdam","3,221","77","169","54"
+"2017","Fall","Comprehensive Colleges","Potsdam","3,196","125","186","80"
+"2016","Fall","Comprehensive Colleges","Potsdam","3,321","95","190","90"
+"2015","Fall","Comprehensive Colleges","Potsdam","3,504","110","190","100"
+"2014","Fall","Comprehensive Colleges","Potsdam","3,573","108","194","104"
+"2013","Fall","Comprehensive Colleges","Potsdam","3,596","111","221","114"
+"2012","Fall","Comprehensive Colleges","Potsdam","3,762","106","230","126"
+"2011","Fall","Comprehensive Colleges","Potsdam","3,827","125","298","145"
+"2021","Fall","Comprehensive Colleges","Purchase","3,145","294","69","14"
+"2020","Fall","Comprehensive Colleges","Purchase","3,248","352","68","17"
+"2019","Fall","Comprehensive Colleges","Purchase","3,708","342","97","9"
+"2018","Fall","Comprehensive Colleges","Purchase","3,767","367","91","9"
+"2017","Fall","Comprehensive Colleges","Purchase","3,712","351","97","7"
+"2016","Fall","Comprehensive Colleges","Purchase","3,673","380","97","6"
+"2015","Fall","Comprehensive Colleges","Purchase","3,678","399","87","5"
+"2014","Fall","Comprehensive Colleges","Purchase","3,746","378","87","14"
+"2013","Fall","Comprehensive Colleges","Purchase","3,847","392","102","12"
+"2012","Fall","Comprehensive Colleges","Purchase","3,721","407","101","11"
+"2011","Fall","Comprehensive Colleges","Purchase","3,733","471","109","11"
+"2021","Fall","Comprehensive Colleges",,"56,274","9,431","2,866","5,311"
+"2020","Fall","Comprehensive Colleges",,"62,460","10,462","3,082","5,177"
+"2019","Fall","Comprehensive Colleges",,"65,608","10,181","2,905","4,980"
+"2018","Fall","Comprehensive Colleges",,"67,986","10,080","2,841","4,706"
+"2017","Fall","Comprehensive Colleges",,"68,510","10,438","2,796","4,557"
+"2016","Fall","Comprehensive Colleges",,"67,749","10,743","2,702","4,439"
+"2015","Fall","Comprehensive Colleges",,"69,213","11,127","2,916","4,508"
+"2014","Fall","Comprehensive Colleges",,"70,146","11,371","2,991","4,934"
+"2013","Fall","Comprehensive Colleges",,"70,382","11,309","3,097","4,913"
+"2012","Fall","Comprehensive Colleges",,"70,979","11,451","3,143","5,335"
+"2011","Fall","Comprehensive Colleges",,"71,924","11,616","3,447","5,796"
+"2021","Fall","Technology Colleges","Alfred State","3,092","322",,
+"2020","Fall","Technology Colleges","Alfred State","3,359","308",,
+"2019","Fall","Technology Colleges","Alfred State","3,482","298",,
+"2018","Fall","Technology Colleges","Alfred State","3,456","281",,
+"2017","Fall","Technology Colleges","Alfred State","3,396","290",,
+"2016","Fall","Technology Colleges","Alfred State","3,447","288",,
+"2015","Fall","Technology Colleges","Alfred State","3,378","321",,
+"2014","Fall","Technology Colleges","Alfred State","3,329","332",,
+"2013","Fall","Technology Colleges","Alfred State","3,222","333",,
+"2012","Fall","Technology Colleges","Alfred State","3,212","316",,
+"2011","Fall","Technology Colleges","Alfred State","3,277","339",,
+"2021","Fall","Technology Colleges","Canton","2,353","505",,
+"2020","Fall","Technology Colleges","Canton","2,624","498",,
+"2019","Fall","Technology Colleges","Canton","2,784","436",,
+"2018","Fall","Technology Colleges","Canton","2,743","473",,
+"2017","Fall","Technology Colleges","Canton","2,660","523",,
+"2016","Fall","Technology Colleges","Canton","2,673","532",,
+"2015","Fall","Technology Colleges","Canton","2,641","499",,
+"2014","Fall","Technology Colleges","Canton","2,793","489",,
+"2013","Fall","Technology Colleges","Canton","2,938","574",,
+"2012","Fall","Technology Colleges","Canton","3,087","693",,
+"2011","Fall","Technology Colleges","Canton","2,952","873",,
+"2021","Fall","Technology Colleges","Cobleskill","1,682","138",,
+"2020","Fall","Technology Colleges","Cobleskill","1,902","177",,
+"2019","Fall","Technology Colleges","Cobleskill","2,095","173",,
+"2018","Fall","Technology Colleges","Cobleskill","2,155","177",,
+"2017","Fall","Technology Colleges","Cobleskill","2,184","113",,
+"2016","Fall","Technology Colleges","Cobleskill","2,168","119",,
+"2015","Fall","Technology Colleges","Cobleskill","2,309","132",,
+"2014","Fall","Technology Colleges","Cobleskill","2,413","122",,
+"2013","Fall","Technology Colleges","Cobleskill","2,267","186",,
+"2012","Fall","Technology Colleges","Cobleskill","2,332","160",,
+"2011","Fall","Technology Colleges","Cobleskill","2,364","152",,
+"2021","Fall","Technology Colleges","Delhi","1,947","472","8","108"
+"2020","Fall","Technology Colleges","Delhi","2,329","520","16","74"
+"2019","Fall","Technology Colleges","Delhi","2,346","529","10","70"
+"2018","Fall","Technology Colleges","Delhi","2,465","773","7","46"
+"2017","Fall","Technology Colleges","Delhi","2,634","833","6","36"
+"2016","Fall","Technology Colleges","Delhi","2,574","900","7","28"
+"2015","Fall","Technology Colleges","Delhi","2,460","971","1","20"
+"2014","Fall","Technology Colleges","Delhi","2,654","942",,
+"2013","Fall","Technology Colleges","Delhi","2,590","718",,
+"2012","Fall","Technology Colleges","Delhi","2,605","546",,
+"2011","Fall","Technology Colleges","Delhi","2,607","642",,
+"2021","Fall","Technology Colleges","Farmingdale","7,321","1,963","20","44"
+"2020","Fall","Technology Colleges","Farmingdale","7,860","2,088","27","43"
+"2019","Fall","Technology Colleges","Farmingdale","7,785","2,154","21","36"
+"2018","Fall","Technology Colleges","Farmingdale","7,689","2,227","27","27"
+"2017","Fall","Technology Colleges","Farmingdale","7,407","2,145","10","12"
+"2016","Fall","Technology Colleges","Farmingdale","6,942","2,293",,
+"2015","Fall","Technology Colleges","Farmingdale","6,388","2,260",,
+"2014","Fall","Technology Colleges","Farmingdale","6,287","2,107",,
+"2013","Fall","Technology Colleges","Farmingdale","6,074","2,088",,
+"2012","Fall","Technology Colleges","Farmingdale","5,787","2,102",,
+"2011","Fall","Technology Colleges","Farmingdale","5,377","2,256",,
+"2021","Fall","Technology Colleges","Maritime","1,300","101","68","76"
+"2020","Fall","Technology Colleges","Maritime","1,443","68","87","73"
+"2019","Fall","Technology Colleges","Maritime","1,474","48","84","68"
+"2018","Fall","Technology Colleges","Maritime","1,542","44","77","71"
+"2017","Fall","Technology Colleges","Maritime","1,581","60","87","66"
+"2016","Fall","Technology Colleges","Maritime","1,590","45","111","86"
+"2015","Fall","Technology Colleges","Maritime","1,630","47","121","62"
+"2014","Fall","Technology Colleges","Maritime","1,591","50","97","61"
+"2013","Fall","Technology Colleges","Maritime","1,517","84","95","59"
+"2012","Fall","Technology Colleges","Maritime","1,519","95","88","59"
+"2011","Fall","Technology Colleges","Maritime","1,565","96","102","60"
+"2021","Fall","Technology Colleges","Morrisville","1,648","309",,
+"2020","Fall","Technology Colleges","Morrisville","2,065","421",,
+"2019","Fall","Technology Colleges","Morrisville","2,283","498",,
+"2018","Fall","Technology Colleges","Morrisville","2,508","478",,
+"2017","Fall","Technology Colleges","Morrisville","2,614","449",,
+"2016","Fall","Technology Colleges","Morrisville","2,624","379",,
+"2015","Fall","Technology Colleges","Morrisville","2,531","409",,
+"2014","Fall","Technology Colleges","Morrisville","2,505","405",,
+"2013","Fall","Technology Colleges","Morrisville","2,668","360",,
+"2012","Fall","Technology Colleges","Morrisville","2,708","387",,
+"2011","Fall","Technology Colleges","Morrisville","2,861","369",,
+"2021","Fall","Technology Colleges",,"19,343","3,810","96","228"
+"2020","Fall","Technology Colleges",,"21,582","4,080","130","190"
+"2019","Fall","Technology Colleges",,"22,249","4,136","115","174"
+"2018","Fall","Technology Colleges",,"22,558","4,453","111","144"
+"2017","Fall","Technology Colleges",,"22,476","4,413","103","114"
+"2016","Fall","Technology Colleges",,"22,018","4,556","118","114"
+"2015","Fall","Technology Colleges",,"21,337","4,639","122","82"
+"2014","Fall","Technology Colleges",,"21,572","4,447","97","61"
+"2013","Fall","Technology Colleges",,"21,276","4,343","95","59"
+"2012","Fall","Technology Colleges",,"21,250","4,299","88","59"
+"2011","Fall","Technology Colleges",,"21,003","4,727","102","60"
+"2021","Fall","Community Colleges","Adirondack","1,349","1,334",,
+"2020","Fall","Community Colleges","Adirondack","1,501","1,493",,
+"2019","Fall","Community Colleges","Adirondack","1,905","1,515",,
+"2018","Fall","Community Colleges","Adirondack","2,090","1,637",,
+"2017","Fall","Community Colleges","Adirondack","2,189","1,703",,
+"2016","Fall","Community Colleges","Adirondack","2,156","1,620",,
+"2015","Fall","Community Colleges","Adirondack","2,294","1,699",,
+"2014","Fall","Community Colleges","Adirondack","2,522","1,725",,
+"2013","Fall","Community Colleges","Adirondack","2,588","1,642",,
+"2012","Fall","Community Colleges","Adirondack","2,263","1,724",,
+"2011","Fall","Community Colleges","Adirondack","2,344","1,754",,
+"2021","Fall","Community Colleges","Broome","2,549","2,206",,
+"2020","Fall","Community Colleges","Broome","2,971","2,415",,
+"2019","Fall","Community Colleges","Broome","3,448","2,661",,
+"2018","Fall","Community Colleges","Broome","3,771","2,736",,
+"2017","Fall","Community Colleges","Broome","4,075","1,549",,
+"2016","Fall","Community Colleges","Broome","4,157","1,545",,
+"2015","Fall","Community Colleges","Broome","4,265","1,661",,
+"2014","Fall","Community Colleges","Broome","4,337","1,607",,
+"2013","Fall","Community Colleges","Broome","4,192","1,702",,
+"2012","Fall","Community Colleges","Broome","4,113","1,839",,
+"2011","Fall","Community Colleges","Broome","4,376","1,824",,
+"2021","Fall","Community Colleges","Cayuga County","832","861",,
+"2020","Fall","Community Colleges","Cayuga County","1,006","1,900",,
+"2019","Fall","Community Colleges","Cayuga County","1,368","2,301",,
+"2018","Fall","Community Colleges","Cayuga County","1,420","2,355",,
+"2017","Fall","Community Colleges","Cayuga County","1,585","2,199",,
+"2016","Fall","Community Colleges","Cayuga County","1,616","2,681",,
+"2015","Fall","Community Colleges","Cayuga County","1,799","2,385",,
+"2014","Fall","Community Colleges","Cayuga County","2,029","2,261",,
+"2013","Fall","Community Colleges","Cayuga County","2,235","2,175",,
+"2012","Fall","Community Colleges","Cayuga County","2,241","2,073",,
+"2011","Fall","Community Colleges","Cayuga County","2,378","2,054",,
+"2021","Fall","Community Colleges","Clinton","294","716",,
+"2020","Fall","Community Colleges","Clinton","367","693",,
+"2019","Fall","Community Colleges","Clinton","529","770",,
+"2018","Fall","Community Colleges","Clinton","605","771",,
+"2017","Fall","Community Colleges","Clinton","682","901",,
+"2016","Fall","Community Colleges","Clinton","770","841",,
+"2015","Fall","Community Colleges","Clinton","910","952",,
+"2014","Fall","Community Colleges","Clinton","990","880",,
+"2013","Fall","Community Colleges","Clinton","1,092","898",,
+"2012","Fall","Community Colleges","Clinton","1,267","982",,
+"2011","Fall","Community Colleges","Clinton","1,361","973",,
+"2021","Fall","Community Colleges","Columbia-Greene","397","958",,
+"2020","Fall","Community Colleges","Columbia-Greene","439","1,006",,
+"2019","Fall","Community Colleges","Columbia-Greene","529","918",,
+"2018","Fall","Community Colleges","Columbia-Greene","623","955",,
+"2017","Fall","Community Colleges","Columbia-Greene","597","1,026",,
+"2016","Fall","Community Colleges","Columbia-Greene","678","967",,
+"2015","Fall","Community Colleges","Columbia-Greene","711","1,070",,
+"2014","Fall","Community Colleges","Columbia-Greene","852","1,191",,
+"2013","Fall","Community Colleges","Columbia-Greene","964","1,154",,
+"2012","Fall","Community Colleges","Columbia-Greene","1,023","1,103",,
+"2011","Fall","Community Colleges","Columbia-Greene","1,041","1,061",,
+"2021","Fall","Community Colleges","Corning","1,248","2,706",,
+"2020","Fall","Community Colleges","Corning","1,493","2,570",,
+"2019","Fall","Community Colleges","Corning","1,601","2,637",,
+"2018","Fall","Community Colleges","Corning","1,663","1,761",,
+"2017","Fall","Community Colleges","Corning","1,837","1,997",,
+"2016","Fall","Community Colleges","Corning","1,775","2,136",,
+"2015","Fall","Community Colleges","Corning","1,929","2,043",,
+"2014","Fall","Community Colleges","Corning","2,114","2,406",,
+"2013","Fall","Community Colleges","Corning","2,375","2,554",,
+"2012","Fall","Community Colleges","Corning","2,294","2,672",,
+"2011","Fall","Community Colleges","Corning","2,468","2,833",,
+"2021","Fall","Community Colleges","Dutchess","2,720","4,502",,
+"2020","Fall","Community Colleges","Dutchess","3,015","5,019",,
+"2019","Fall","Community Colleges","Dutchess","3,514","5,177",,
+"2018","Fall","Community Colleges","Dutchess","3,666","4,916",,
+"2017","Fall","Community Colleges","Dutchess","3,839","5,222",,
+"2016","Fall","Community Colleges","Dutchess","4,071","5,275",,
+"2015","Fall","Community Colleges","Dutchess","4,284","5,262",,
+"2014","Fall","Community Colleges","Dutchess","4,666","5,239",,
+"2013","Fall","Community Colleges","Dutchess","4,893","5,339",,
+"2012","Fall","Community Colleges","Dutchess","5,052","5,426",,
+"2011","Fall","Community Colleges","Dutchess","5,095","5,221",,
+"2021","Fall","Community Colleges","Erie","4,704","3,436",,
+"2020","Fall","Community Colleges","Erie","5,059","3,305",,
+"2019","Fall","Community Colleges","Erie","6,252","3,779",,
+"2018","Fall","Community Colleges","Erie","6,706","3,823",,
+"2017","Fall","Community Colleges","Erie","7,269","3,866",,
+"2016","Fall","Community Colleges","Erie","7,490","3,788",,
+"2015","Fall","Community Colleges","Erie","7,931","4,091",,
+"2014","Fall","Community Colleges","Erie","8,424","4,309",,
+"2013","Fall","Community Colleges","Erie","9,039","4,610",,
+"2012","Fall","Community Colleges","Erie","9,193","4,797",,
+"2011","Fall","Community Colleges","Erie","9,356","4,820",,
+"2021","Fall","Community Colleges","Fashion Institute","6,875","1,033","180","62"
+"2020","Fall","Community Colleges","Fashion Institute","6,966","993","176","56"
+"2019","Fall","Community Colleges","Fashion Institute","7,340","1,168","165","53"
+"2018","Fall","Community Colleges","Fashion Institute","7,246","1,309","160","52"
+"2017","Fall","Community Colleges","Fashion Institute","7,210","1,451","131","54"
+"2016","Fall","Community Colleges","Fashion Institute","7,395","1,690","120","56"
+"2015","Fall","Community Colleges","Fashion Institute","7,409","1,977","116","63"
+"2014","Fall","Community Colleges","Fashion Institute","7,454","2,113","124","73"
+"2013","Fall","Community Colleges","Fashion Institute","7,257","2,309","120","69"
+"2012","Fall","Community Colleges","Fashion Institute","7,154","2,694","116","88"
+"2011","Fall","Community Colleges","Fashion Institute","7,141","2,882","111","89"
+"2021","Fall","Community Colleges","Finger Lakes","2,053","3,361",,
+"2020","Fall","Community Colleges","Finger Lakes","2,204","3,348",,
+"2019","Fall","Community Colleges","Finger Lakes","2,243","3,406",,
+"2018","Fall","Community Colleges","Finger Lakes","2,377","3,567",,
+"2017","Fall","Community Colleges","Finger Lakes","2,554","3,799",,
+"2016","Fall","Community Colleges","Finger Lakes","2,587","3,933",,
+"2015","Fall","Community Colleges","Finger Lakes","3,003","3,752",,
+"2014","Fall","Community Colleges","Finger Lakes","3,318","3,475",,
+"2013","Fall","Community Colleges","Finger Lakes","3,404","2,985",,
+"2012","Fall","Community Colleges","Finger Lakes","3,610","2,929",,
+"2011","Fall","Community Colleges","Finger Lakes","3,819","2,992",,
+"2021","Fall","Community Colleges","Fulton-Montgomery","616","1,122",,
+"2020","Fall","Community Colleges","Fulton-Montgomery","778","1,168",,
+"2019","Fall","Community Colleges","Fulton-Montgomery","995","1,291",,
+"2018","Fall","Community Colleges","Fulton-Montgomery","1,139","1,312",,
+"2017","Fall","Community Colleges","Fulton-Montgomery","1,250","1,153",,
+"2016","Fall","Community Colleges","Fulton-Montgomery","1,349","1,285",,
+"2015","Fall","Community Colleges","Fulton-Montgomery","1,426","1,125",,
+"2014","Fall","Community Colleges","Fulton-Montgomery","1,523","1,066",,
+"2013","Fall","Community Colleges","Fulton-Montgomery","1,724","1,057",,
+"2012","Fall","Community Colleges","Fulton-Montgomery","1,719","964",,
+"2011","Fall","Community Colleges","Fulton-Montgomery","1,827","1,015",,
+"2021","Fall","Community Colleges","Genesee","1,556","2,916",,
+"2020","Fall","Community Colleges","Genesee","1,740","2,995",,
+"2019","Fall","Community Colleges","Genesee","1,918","3,367",,
+"2018","Fall","Community Colleges","Genesee","2,047","3,483",,
+"2017","Fall","Community Colleges","Genesee","2,353","3,553",,
+"2016","Fall","Community Colleges","Genesee","2,515","3,626",,
+"2015","Fall","Community Colleges","Genesee","2,846","3,675",,
+"2014","Fall","Community Colleges","Genesee","3,178","3,705",,
+"2013","Fall","Community Colleges","Genesee","3,326","3,761",,
+"2012","Fall","Community Colleges","Genesee","3,469","3,496",,
+"2014","Fall","Community Colleges","Hudson Valley","6,422","5,755",,
+"2013","Fall","Community Colleges","Hudson Valley","6,832","6,009",,
+"2012","Fall","Community Colleges","Hudson Valley","7,175","5,939",,
+"2011","Fall","Community Colleges","Hudson Valley","7,643","5,951",,
+"2021","Fall","Community Colleges","Jamestown","1,438","2,360",,
+"2020","Fall","Community Colleges","Jamestown","1,654","1,776",,
+"2019","Fall","Community Colleges","Jamestown","1,973","2,477",,
+"2018","Fall","Community Colleges","Jamestown","1,935","2,541",,
+"2017","Fall","Community Colleges","Jamestown","2,060","2,403",,
+"2016","Fall","Community Colleges","Jamestown","2,149","2,468",,
+"2015","Fall","Community Colleges","Jamestown","2,353","2,473",,
+"2014","Fall","Community Colleges","Jamestown","2,551","2,514",,
+"2013","Fall","Community Colleges","Jamestown","2,764","2,414",,
+"2012","Fall","Community Colleges","Jamestown","2,772","2,285",,
+"2011","Fall","Community Colleges","Jamestown","2,954","2,503",,
+"2021","Fall","Community Colleges","Jefferson","1,225","1,137",,
+"2020","Fall","Community Colleges","Jefferson","1,431","1,227",,
+"2019","Fall","Community Colleges","Jefferson","1,573","1,411",,
+"2018","Fall","Community Colleges","Jefferson","1,802","1,475",,
+"2017","Fall","Community Colleges","Jefferson","1,947","1,513",,
+"2016","Fall","Community Colleges","Jefferson","2,082","1,550",,
+"2015","Fall","Community Colleges","Jefferson","2,095","1,653",,
+"2014","Fall","Community Colleges","Jefferson","2,153","1,727",,
+"2013","Fall","Community Colleges","Jefferson","2,234","1,697",,
+"2012","Fall","Community Colleges","Jefferson","2,254","1,587",,
+"2011","Fall","Community Colleges","Jefferson","2,237","1,578",,
+"2021","Fall","Community Colleges","Mohawk Valley","2,323","3,024",,
+"2020","Fall","Community Colleges","Mohawk Valley","2,532","3,173",,
+"2019","Fall","Community Colleges","Mohawk Valley","2,968","3,039",,
+"2018","Fall","Community Colleges","Mohawk Valley","3,161","3,156",,
+"2017","Fall","Community Colleges","Mohawk Valley","3,324","3,182",,
+"2016","Fall","Community Colleges","Mohawk Valley","3,412","3,213",,
+"2015","Fall","Community Colleges","Mohawk Valley","3,632","3,043",,
+"2014","Fall","Community Colleges","Mohawk Valley","4,024","3,125",,
+"2013","Fall","Community Colleges","Mohawk Valley","4,616","2,817",,
+"2012","Fall","Community Colleges","Mohawk Valley","4,601","2,850",,
+"2011","Fall","Community Colleges","Mohawk Valley","4,904","2,739",,
+"2021","Fall","Community Colleges","Monroe","4,667","4,054",,
+"2020","Fall","Community Colleges","Monroe","5,493","4,668",,
+"2019","Fall","Community Colleges","Monroe","6,927","4,645",,
+"2018","Fall","Community Colleges","Monroe","7,483","4,790",,
+"2017","Fall","Community Colleges","Monroe","7,866","5,041",,
+"2016","Fall","Community Colleges","Monroe","8,214","5,373",,
+"2015","Fall","Community Colleges","Monroe","8,856","5,730",,
+"2014","Fall","Community Colleges","Monroe","9,374","5,961",,
+"2013","Fall","Community Colleges","Monroe","10,260","6,198",,
+"2012","Fall","Community Colleges","Monroe","10,554","6,742",,
+"2011","Fall","Community Colleges","Monroe","10,992","6,707",,
+"2021","Fall","Community Colleges","Nassau","6,931","5,700",,
+"2020","Fall","Community Colleges","Nassau","7,594","6,270",,
+"2019","Fall","Community Colleges","Nassau","9,486","7,164",,
+"2018","Fall","Community Colleges","Nassau","10,100","7,306",,
+"2017","Fall","Community Colleges","Nassau","11,258","7,801",,
+"2016","Fall","Community Colleges","Nassau","11,832","8,542",,
+"2015","Fall","Community Colleges","Nassau","12,956","8,602",,
+"2014","Fall","Community Colleges","Nassau","13,541","8,833",,
+"2013","Fall","Community Colleges","Nassau","14,209","9,109",,
+"2012","Fall","Community Colleges","Nassau","14,560","8,780",,
+"2011","Fall","Community Colleges","Nassau","14,940","8,610",,
+"2021","Fall","Community Colleges","Niagara County","2,279","1,875",,
+"2020","Fall","Community Colleges","Niagara County","2,353","1,993",,
+"2019","Fall","Community Colleges","Niagara County","2,704","2,220",,
+"2018","Fall","Community Colleges","Niagara County","2,962","2,085",,
+"2017","Fall","Community Colleges","Niagara County","3,229","2,210",,
+"2016","Fall","Community Colleges","Niagara County","3,418","2,475",,
+"2015","Fall","Community Colleges","Niagara County","3,610","2,506",,
+"2014","Fall","Community Colleges","Niagara County","3,994","2,484",,
+"2013","Fall","Community Colleges","Niagara County","4,178","2,452",,
+"2012","Fall","Community Colleges","Niagara County","4,207","2,528",,
+"2011","Fall","Community Colleges","Niagara County","4,387","2,770",,
+"2021","Fall","Community Colleges","North Country","580","1,015",,
+"2020","Fall","Community Colleges","North Country","652","950",,
+"2019","Fall","Community Colleges","North Country","751","1,142",,
+"2018","Fall","Community Colleges","North Country","790","1,188",,
+"2017","Fall","Community Colleges","North Country","896","1,110",,
+"2016","Fall","Community Colleges","North Country","806","1,125",,
+"2015","Fall","Community Colleges","North Country","816","1,067",,
+"2014","Fall","Community Colleges","North Country","957","1,005",,
+"2013","Fall","Community Colleges","North Country","951","1,137",,
+"2012","Fall","Community Colleges","North Country","1,023","1,304",,
+"2011","Fall","Community Colleges","North Country","1,124","1,330",,
+"2021","Fall","Community Colleges","Onondaga","3,012","4,675",,
+"2020","Fall","Community Colleges","Onondaga","3,612","4,933",,
+"2019","Fall","Community Colleges","Onondaga","4,236","5,213",,
+"2018","Fall","Community Colleges","Onondaga","4,725","5,109",,
+"2017","Fall","Community Colleges","Onondaga","5,118","5,541",,
+"2016","Fall","Community Colleges","Onondaga","5,736","6,904",,
+"2015","Fall","Community Colleges","Onondaga","5,895","5,991",,
+"2014","Fall","Community Colleges","Onondaga","6,344","5,927",,
+"2013","Fall","Community Colleges","Onondaga","6,540","6,294",,
+"2012","Fall","Community Colleges","Onondaga","6,719","6,299",,
+"2011","Fall","Community Colleges","Onondaga","6,818","5,928",,
+"2021","Fall","Community Colleges","Orange County","2,008","3,046",,
+"2020","Fall","Community Colleges","Orange County","2,481","3,381",,
+"2019","Fall","Community Colleges","Orange County","2,680","3,692",,
+"2018","Fall","Community Colleges","Orange County","2,964","3,653",,
+"2017","Fall","Community Colleges","Orange County","3,011","3,590",,
+"2016","Fall","Community Colleges","Orange County","3,156","3,769",,
+"2015","Fall","Community Colleges","Orange County","3,226","3,756",,
+"2014","Fall","Community Colleges","Orange County","3,323","3,628",,
+"2013","Fall","Community Colleges","Orange County","3,338","3,691",,
+"2012","Fall","Community Colleges","Orange County","3,462","3,795",,
+"2011","Fall","Community Colleges","Orange County","3,638","3,666",,
+"2021","Fall","Community Colleges","Rockland","2,576","3,061",,
+"2020","Fall","Community Colleges","Rockland","2,894","2,841",,
+"2019","Fall","Community Colleges","Rockland","3,325","3,207",,
+"2018","Fall","Community Colleges","Rockland","3,542","3,317",,
+"2017","Fall","Community Colleges","Rockland","3,674","3,276",,
+"2016","Fall","Community Colleges","Rockland","3,825","3,352",,
+"2015","Fall","Community Colleges","Rockland","4,018","3,162",,
+"2014","Fall","Community Colleges","Rockland","4,200","3,321",,
+"2013","Fall","Community Colleges","Rockland","4,483","3,163",,
+"2012","Fall","Community Colleges","Rockland","4,709","3,465",,
+"2011","Fall","Community Colleges","Rockland","4,754","3,292",,
+"2021","Fall","Community Colleges","Schenectady County","1,131","2,574",,
+"2020","Fall","Community Colleges","Schenectady County","1,227","2,788",,
+"2019","Fall","Community Colleges","Schenectady County","1,555","3,177",,
+"2018","Fall","Community Colleges","Schenectady County","1,729","3,502",,
+"2017","Fall","Community Colleges","Schenectady County","2,144","4,444",,
+"2016","Fall","Community Colleges","Schenectady County","2,002","2,743",,
+"2015","Fall","Community Colleges","Schenectady County","2,234","3,892",,
+"2014","Fall","Community Colleges","Schenectady County","2,562","3,935",,
+"2013","Fall","Community Colleges","Schenectady County","2,747","3,827",,
+"2012","Fall","Community Colleges","Schenectady County","2,730","3,941",,
+"2011","Fall","Community Colleges","Schenectady County","2,668","4,091",,
+"2021","Fall","Community Colleges","Suffolk County","9,333","11,237",,
+"2020","Fall","Community Colleges","Suffolk County","11,112","11,467",,
+"2019","Fall","Community Colleges","Suffolk County","12,399","12,831",,
+"2018","Fall","Community Colleges","Suffolk County","13,187","12,891",,
+"2017","Fall","Community Colleges","Suffolk County","13,867","12,889",,
+"2016","Fall","Community Colleges","Suffolk County","14,084","12,982",,
+"2015","Fall","Community Colleges","Suffolk County","14,722","12,107",,
+"2014","Fall","Community Colleges","Suffolk County","14,318","12,282",,
+"2013","Fall","Community Colleges","Suffolk County","14,831","11,880",,
+"2012","Fall","Community Colleges","Suffolk County","14,843","11,376",,
+"2011","Fall","Community Colleges","Suffolk County","15,064","11,725",,
+"2021","Fall","Community Colleges","Sullivan County","583","1,012",,
+"2020","Fall","Community Colleges","Sullivan County","704","956",,
+"2019","Fall","Community Colleges","Sullivan County","779","849",,
+"2018","Fall","Community Colleges","Sullivan County","784","750",,
+"2017","Fall","Community Colleges","Sullivan County","844","721",,
+"2016","Fall","Community Colleges","Sullivan County","820","790",,
+"2015","Fall","Community Colleges","Sullivan County","809","783",,
+"2014","Fall","Community Colleges","Sullivan County","930","713",,
+"2013","Fall","Community Colleges","Sullivan County","1,020","535",,
+"2012","Fall","Community Colleges","Sullivan County","1,040","575",,
+"2011","Fall","Community Colleges","Sullivan County","1,134","570",,
+"2021","Fall","Community Colleges","Tompkins Cortland","1,008","3,560",,
+"2020","Fall","Community Colleges","Tompkins Cortland","1,203","3,570",,
+"2019","Fall","Community Colleges","Tompkins Cortland","1,460","743",,
+"2018","Fall","Community Colleges","Tompkins Cortland","1,627","746",,
+"2017","Fall","Community Colleges","Tompkins Cortland","1,830","802",,
+"2016","Fall","Community Colleges","Tompkins Cortland","1,981","862",,
+"2015","Fall","Community Colleges","Tompkins Cortland","2,179","904",,
+"2014","Fall","Community Colleges","Tompkins Cortland","2,328","3,231",,
+"2013","Fall","Community Colleges","Tompkins Cortland","2,587","2,903",,
+"2012","Fall","Community Colleges","Tompkins Cortland","2,686","2,764",,
+"2011","Fall","Community Colleges","Tompkins Cortland","2,930","2,732",,
+"2021","Fall","Community Colleges","Ulster County","973","1,934",,
+"2020","Fall","Community Colleges","Ulster County","1,125","1,964",,
+"2019","Fall","Community Colleges","Ulster County","1,424","2,126",,
+"2018","Fall","Community Colleges","Ulster County","1,420","2,134",,
+"2017","Fall","Community Colleges","Ulster County","1,454","2,106",,
+"2016","Fall","Community Colleges","Ulster County","1,380","2,036",,
+"2015","Fall","Community Colleges","Ulster County","1,437","2,031",,
+"2014","Fall","Community Colleges","Ulster County","1,584","2,010",,
+"2013","Fall","Community Colleges","Ulster County","1,654","1,961",,
+"2012","Fall","Community Colleges","Ulster County","1,567","2,114",,
+"2011","Fall","Community Colleges","Ulster County","1,638","1,967",,
+"2021","Fall","Community Colleges","Westchester","4,369","4,752",,
+"2020","Fall","Community Colleges","Westchester","5,019","5,053",,
+"2019","Fall","Community Colleges","Westchester","5,685","5,436",,
+"2018","Fall","Community Colleges","Westchester","6,156","5,379",,
+"2017","Fall","Community Colleges","Westchester","6,748","5,823",,
+"2016","Fall","Community Colleges","Westchester","6,973","5,869",,
+"2015","Fall","Community Colleges","Westchester","7,062","5,904",,
+"2014","Fall","Community Colleges","Westchester","7,546","6,370",,
+"2013","Fall","Community Colleges","Westchester","7,640","6,141",,
+"2012","Fall","Community Colleges","Westchester","7,618","6,379",,
+"2011","Fall","Community Colleges","Westchester","7,410","6,559",,
+"2021","Fall","Community Colleges",,"75,078","85,196","180","62"
+"2020","Fall","Community Colleges",,"84,359","89,339","176","56"
+"2019","Fall","Community Colleges",,"98,236","94,505","165","53"
+"2018","Fall","Community Colleges",,"104,752","94,909","160","52"
+"2017","Fall","Community Colleges",,"112,148","97,085","131","54"
+"2016","Fall","Community Colleges",,"115,990","100,111","120","56"
+"2015","Fall","Community Colleges",,"122,712","100,107","116","63"
+"2014","Fall","Community Colleges",,"129,400","104,215","124","73"
+"2013","Fall","Community Colleges",,"136,054","103,548","120","69"
+"2012","Fall","Community Colleges",,"138,160","104,643","116","88"
+"2011","Fall","Community Colleges",,"142,522","104,945","111","89"
+"2022","Fall","SUNY Total",,"216,888","102,123","27,445","17,156"
+"2022","Fall","Doctoral Degree Granting Institutions",,"71,002","4,490","24,031","11,418"
+"2022","Fall","Doctoral Degree Granting Institutions","Albany","11,541","723","2,219","2,175"
+"2022","Fall","Doctoral Degree Granting Institutions","Binghamton","14,082","320","2,475","1,435"
+"2022","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","19,081","1,680","7,460","3,878"
+"2022","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,341","1,098","5,608","2,599"
+"2022","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","386","12","66","6"
+"2022","Fall","Doctoral Degree Granting Institutions","Cornell Stat","6,185",,"2,728",
+"2022","Fall","Doctoral Degree Granting Institutions","Downstate Medical","262","20","1,434","469"
+"2022","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,287","334","177","178"
+"2022","Fall","Doctoral Degree Granting Institutions","Optometry",,,"407","2"
+"2022","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,709","273","296","564"
+"2022","Fall","Doctoral Degree Granting Institutions","Upstate Medical","128","30","1,161","112"
+"2022","Fall","Comprehensive Colleges",,"53,160","8,540","3,121","5,476"
+"2022","Fall","Comprehensive Colleges","Brockport","4,517","632","366","909"
+"2022","Fall","Comprehensive Colleges","Buffalo State","4,861","603","386","595"
+"2022","Fall","Comprehensive Colleges","Cortland","5,859","134","236","461"
+"2022","Fall","Comprehensive Colleges","Empire State","3,282","4,453","168","1,504"
+"2022","Fall","Comprehensive Colleges","Fredonia","3,111","101","131","148"
+"2022","Fall","Comprehensive Colleges","Geneseo","3,971","142","40","34"
+"2022","Fall","Comprehensive Colleges","New Paltz","5,541","549","506","368"
+"2022","Fall","Comprehensive Colleges","Old Westbury","3,307","600","158","205"
+"2022","Fall","Comprehensive Colleges","Oneonta","4,767","92","164","407"
+"2022","Fall","Comprehensive Colleges","Oswego","5,538","447","384","537"
+"2022","Fall","Comprehensive Colleges","Plattsburgh","3,548","456","320","150"
+"2022","Fall","Comprehensive Colleges","Potsdam","2,003","79","200","145"
+"2022","Fall","Comprehensive Colleges","Purchase","2,855","252","62","13"
+"2022","Fall","Technology Colleges",,"19,235","3,505","103","198"
+"2022","Fall","Technology Colleges","Alfred State","3,057","291",,
+"2022","Fall","Technology Colleges","Canton","2,341","494",,
+"2022","Fall","Technology Colleges","Cobleskill","1,668","115",,
+"2022","Fall","Technology Colleges","Delhi","2,010","402","14","105"
+"2022","Fall","Technology Colleges","Farmingdale","7,388","1,876","13","37"
+"2022","Fall","Technology Colleges","Maritime","1,200","95","76","56"
+"2022","Fall","Technology Colleges","Morrisville","1,571","232",,
+"2022","Fall","Community Colleges",,"73,491","85,588","190","64"
+"2022","Fall","Community Colleges","Adirondack","1,399","1,263",,
+"2022","Fall","Community Colleges","Broome","2,448","2,201",,
+"2022","Fall","Community Colleges","Cayuga County","831","2,648",,
+"2022","Fall","Community Colleges","Clinton","306","688",,
+"2022","Fall","Community Colleges","Columbia-Greene","461","986",,
+"2022","Fall","Community Colleges","Corning","1,307","2,479",,
+"2022","Fall","Community Colleges","Dutchess","2,556","4,491",,
+"2022","Fall","Community Colleges","Erie","4,546","3,301",,
+"2022","Fall","Community Colleges","Fashion Institute","6,885","986","190","64"
+"2022","Fall","Community Colleges","Finger Lakes","1,957","3,374",,
+"2022","Fall","Community Colleges","Fulton-Montgomery","675","1,137",,
+"2022","Fall","Community Colleges","Genesee","1,445","2,878",,
+"2022","Fall","Community Colleges","Herkimer County","1,054","976",,
+"2022","Fall","Community Colleges","Hudson Valley","4,481","4,660",,
+"2022","Fall","Community Colleges","Jamestown","1,407","2,349",,
+"2022","Fall","Community Colleges","Jefferson","1,166","1,126",,
+"2022","Fall","Community Colleges","Mohawk Valley","2,318","3,221",,
+"2022","Fall","Community Colleges","Monroe","4,431","3,852",,
+"2022","Fall","Community Colleges","Nassau","6,711","5,285",,
+"2022","Fall","Community Colleges","Niagara County","2,114","1,724",,
+"2022","Fall","Community Colleges","North Country","601","1,003",,
+"2022","Fall","Community Colleges","Onondaga","2,797","4,523",,
+"2022","Fall","Community Colleges","Orange County","1,991","2,994",,
+"2022","Fall","Community Colleges","Rockland","2,556","2,916",,
+"2022","Fall","Community Colleges","Schenectady County","1,013","2,677",,
+"2022","Fall","Community Colleges","Suffolk County","9,117","10,926",,
+"2022","Fall","Community Colleges","Sullivan County","633","1,048",,
+"2022","Fall","Community Colleges","Tompkins Cortland","1,074","3,368",,
+"2022","Fall","Community Colleges","Ulster County","989","1,923",,
+"2022","Fall","Community Colleges","Westchester","4,222","4,585",,
+"2023","Fall","SUNY Total",,"219,047","102,610","27,892","17,989"
+"2023","Fall","Doctoral Degree Granting Institutions Total",,"71,198","4,159","24,145","11,555"
+"2023","Fall","Doctoral Degree Granting Institutions","Albany","11,558","632","2,471","2,219"
+"2023","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","411","7","71","9"
+"2023","Fall","Doctoral Degree Granting Institutions","Binghamton","14,088","320","2,519","1,526"
+"2023","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,926","1,539","7,335","4,091"
+"2023","Fall","Doctoral Degree Granting Institutions","Cornell Stat","6,359",,"2,480",
+"2023","Fall","Doctoral Degree Granting Institutions","Downstate Medical","270","16","1,542","376"
+"2023","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,427","304","172","180"
+"2023","Fall","Doctoral Degree Granting Institutions","Optometry",,,"393","1"
+"2023","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,627","277","303","497"
+"2023","Fall","Doctoral Degree Granting Institutions","Stony Brook","16,430","1,048","5,776","2,571"
+"2023","Fall","Doctoral Degree Granting Institutions","Upstate Medical","102","16","1,083","85"
+"2023","Fall","Comprehensive Colleges Total",,"52,754","8,252","3,471","6,167"
+"2023","Fall","Comprehensive Colleges","Brockport","4,840","589","384","1,118"
+"2023","Fall","Comprehensive Colleges","Buffalo State","4,909","598","319","579"
+"2023","Fall","Comprehensive Colleges","Cortland","5,772","133","295","580"
+"2023","Fall","Comprehensive Colleges","Empire State","3,448","4,341","214","1,542"
+"2023","Fall","Comprehensive Colleges","Fredonia","2,784","93","132","211"
+"2023","Fall","Comprehensive Colleges","Geneseo","3,718","150","35","25"
+"2023","Fall","Comprehensive Colleges","New Paltz","5,564","547","528","388"
+"2023","Fall","Comprehensive Colleges","Old Westbury","3,447","592","190","219"
+"2023","Fall","Comprehensive Colleges","Oneonta","4,760","87","200","410"
+"2023","Fall","Comprehensive Colleges","Oswego","5,305","347","438","666"
+"2023","Fall","Comprehensive Colleges","Plattsburgh","3,404","452","349","212"
+"2023","Fall","Comprehensive Colleges","Potsdam","1,885","76","337","203"
+"2023","Fall","Comprehensive Colleges","Purchase","2,918","247","50","14"
+"2023","Fall","Technology Colleges Total",,"19,881","3,453","79","199"
+"2023","Fall","Technology Colleges","Alfred State","3,231","294",,
+"2023","Fall","Technology Colleges","Canton","2,330","542",,
+"2023","Fall","Technology Colleges","Cobleskill","1,658","107",,
+"2023","Fall","Technology Colleges","Delhi","2,173","365","19","109"
+"2023","Fall","Technology Colleges","Farmingdale","7,622","1,886","5","28"
+"2023","Fall","Technology Colleges","Maritime","1,167","76","55","52"
+"2023","Fall","Technology Colleges","Morrisville","1,700","183",,"10"
+"2023","Fall","Community Colleges Total",,"75,214","86,746","197","68"
+"2023","Fall","Community Colleges","Adirondack","1,339","1,384",,
+"2023","Fall","Community Colleges","Broome","2,462","2,966",,
+"2023","Fall","Community Colleges","Cayuga County","766","2,685",,
+"2023","Fall","Community Colleges","Clinton","281","734",,
+"2023","Fall","Community Colleges","Columbia-Greene","503","1,193",,
+"2023","Fall","Community Colleges","Corning","1,212","2,425",,
+"2023","Fall","Community Colleges","Dutchess","2,563","3,237",,
+"2023","Fall","Community Colleges","Erie","4,396","3,222",,
+"2023","Fall","Community Colleges","Fashion Institute","6,817","1,026","197","68"
+"2023","Fall","Community Colleges","Finger Lakes","2,070","3,387",,
+"2023","Fall","Community Colleges","Fulton-Montgomery","606","1,155",,
+"2023","Fall","Community Colleges","Genesee","1,443","2,845",,
+"2023","Fall","Community Colleges","Herkimer County","940","923",,
+"2023","Fall","Community Colleges","Hudson Valley","4,675","4,768",,
+"2023","Fall","Community Colleges","Jamestown","1,481","2,291",,
+"2023","Fall","Community Colleges","Jefferson","1,086","1,166",,
+"2023","Fall","Community Colleges","Mohawk Valley","2,474","3,288",,
+"2023","Fall","Community Colleges","Monroe","4,694","3,836",,
+"2023","Fall","Community Colleges","Nassau","6,755","5,229",,
+"2023","Fall","Community Colleges","Niagara County","2,195","2,022",,
+"2023","Fall","Community Colleges","North Country","640","975",,
+"2023","Fall","Community Colleges","Onondaga","3,161","4,951",,
+"2023","Fall","Community Colleges","Orange County","2,183","3,203",,
+"2023","Fall","Community Colleges","Rockland","2,724","3,039",,
+"2023","Fall","Community Colleges","Schenectady County","1,076","2,844",,
+"2023","Fall","Community Colleges","Suffolk County","9,340","10,744",,
+"2023","Fall","Community Colleges","Sullivan County","716","1,070",,
+"2023","Fall","Community Colleges","Tompkins Cortland","1,194","3,528",,
+"2023","Fall","Community Colleges","Ulster County","978","2,023",,
+"2023","Fall","Community Colleges","Westchester","4,444","4,587",,
+"2024","Fall","SUNY Total",,"223,037","105,391","29,156","18,949"
+"2024","Fall","Doctoral Degree Granting Institutions Total",,"73,016","4,073","24,898","11,568"
+"2024","Fall","Doctoral Degree Granting Institutions","Albany","12,017","649","2,550","2,344"
+"2024","Fall","Doctoral Degree Granting Institutions","Alfred-Ceramics","439","10","70","6"
+"2024","Fall","Doctoral Degree Granting Institutions","Binghamton","14,321","347","2,549","1,598"
+"2024","Fall","Doctoral Degree Granting Institutions","Buffalo Univ","18,772","1,590","7,482","4,061"
+"2024","Fall","Doctoral Degree Granting Institutions","Cornell Stat","6,436",,"2,743",
+"2024","Fall","Doctoral Degree Granting Institutions","Downstate Medical","283","10","1,537","390"
+"2024","Fall","Doctoral Degree Granting Institutions","Environmental Science and Forestry","1,746","97","234","142"
+"2024","Fall","Doctoral Degree Granting Institutions","Optometry",,,"399","1"
+"2024","Fall","Doctoral Degree Granting Institutions","SUNY Poly","1,654","319","252","508"
+"2024","Fall","Doctoral Degree Granting Institutions","Stony Brook","17,208","1,025","5,933","2,492"
+"2024","Fall","Doctoral Degree Granting Institutions","Upstate Medical","140","26","1,149","26"
+"2024","Fall","Comprehensive Colleges Total",,"53,369","8,178","3,929","7,094"
+"2024","Fall","Comprehensive Colleges","Brockport","5,238","578","432","1,234"
+"2024","Fall","Comprehensive Colleges","Buffalo State","4,697","508","363","570"
+"2024","Fall","Comprehensive Colleges","Cortland","5,786","125","355","672"
+"2024","Fall","Comprehensive Colleges","Empire State","3,997","4,398","281","1,793"
+"2024","Fall","Comprehensive Colleges","Fredonia","2,693","78","118","290"
+"2024","Fall","Comprehensive Colleges","Geneseo","3,759","122","41","23"
+"2024","Fall","Comprehensive Colleges","New Paltz","5,624","573","532","504"
+"2024","Fall","Comprehensive Colleges","Old Westbury","3,687","573","195","254"
+"2024","Fall","Comprehensive Colleges","Oneonta","4,582","99","199","457"
+"2024","Fall","Comprehensive Colleges","Oswego","5,130","387","443","755"
+"2024","Fall","Comprehensive Colleges","Plattsburgh","3,405","420","460","255"
+"2024","Fall","Comprehensive Colleges","Potsdam","1,747","84","451","270"
+"2024","Fall","Comprehensive Colleges","Purchase","3,024","233","59","17"
+"2024","Fall","Technology Colleges Total",,"20,789","3,678","112","222"
+"2024","Fall","Technology Colleges","Alfred State","3,264","308",,
+"2024","Fall","Technology Colleges","Canton","2,347","514",,
+"2024","Fall","Technology Colleges","Cobleskill","1,768","121",,
+"2024","Fall","Technology Colleges","Delhi","2,414","395","36","119"
+"2024","Fall","Technology Colleges","Farmingdale","7,987","2,020","4","28"
+"2024","Fall","Technology Colleges","Maritime","1,218","67","72","56"
+"2024","Fall","Technology Colleges","Morrisville","1,791","253",,"19"
+"2024","Fall","Community Colleges Total",,"75,863","89,462","217","65"
+"2024","Fall","Community Colleges","Adirondack","1,274","1,302",,
+"2024","Fall","Community Colleges","Broome","2,211","3,116",,
+"2024","Fall","Community Colleges","Cayuga County","819","2,761",,
+"2024","Fall","Community Colleges","Clinton","317","750",,
+"2024","Fall","Community Colleges","Columbia-Greene","464","1,152",,
+"2024","Fall","Community Colleges","Corning","1,239","2,481",,
+"2024","Fall","Community Colleges","Dutchess","2,645","3,961",,
+"2024","Fall","Community Colleges","Erie","4,540","3,550",,
+"2024","Fall","Community Colleges","Fashion Institute","6,886","1,038","217","65"
+"2024","Fall","Community Colleges","Finger Lakes","2,256","3,748",,
+"2024","Fall","Community Colleges","Fulton-Montgomery","622","1,243",,
+"2024","Fall","Community Colleges","Genesee","1,494","2,746",,
+"2024","Fall","Community Colleges","Herkimer County","943","1,028",,
+"2024","Fall","Community Colleges","Hudson Valley","4,801","4,426",,
+"2024","Fall","Community Colleges","Jamestown","1,535","2,519",,
+"2024","Fall","Community Colleges","Jefferson","1,145","1,174",,
+"2024","Fall","Community Colleges","Mohawk Valley","2,434","3,506",,
+"2024","Fall","Community Colleges","Monroe","4,559","4,082",,
+"2024","Fall","Community Colleges","Nassau","6,764","5,537",,
+"2024","Fall","Community Colleges","Niagara County","2,326","2,221",,
+"2024","Fall","Community Colleges","North Country","738","920",,
+"2024","Fall","Community Colleges","Onondaga","3,264","5,273",,
+"2024","Fall","Community Colleges","Orange County","2,284","3,429",,
+"2024","Fall","Community Colleges","Rockland","2,417","2,947",,
+"2024","Fall","Community Colleges","Schenectady County","1,089","2,440",,
+"2024","Fall","Community Colleges","Suffolk County","9,410","10,563",,
+"2024","Fall","Community Colleges","Sullivan County","573","954",,
+"2024","Fall","Community Colleges","Tompkins Cortland","1,104","3,855",,
+"2024","Fall","Community Colleges","Ulster County","1,096","1,995",,
+"2024","Fall","Community Colleges","Westchester","4,614","4,745",,

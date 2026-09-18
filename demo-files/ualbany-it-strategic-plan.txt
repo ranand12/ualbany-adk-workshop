@@ -1,0 +1,269 @@
+UAlbany IT Strategic Plan 2025-2028
+========================================
+Source: https://www.albany.edu/its/it-strategic-plan
+
+Introduction
+The University at Albany IT Strategic Plan sets the tone and direction for technological advancement for 2025-2028.
+The Plan is designed to advance University’s strategic goals, values and priorities while ensuring technical infrastructure and services fully support the institution’s competitive R1 status and future growth. The Plan is updated annually. As goals are advanced and completed, they are reviewed and adjusted to reflect the progressive technical needs of the campus community.
+At the end of each fiscal year, ITS produces an Annual Report to capture recent progress and highlight accomplishments. This continuous cycle of planning, execution, and recalibration fosters ITS’ engagement with the University and increases transparency about how IT decisions are made.
+Overview of ITS
+ITS is the centralized provider of campus technology. The mission of the organization is to anticipate and provide sophisticated information technology services in support of the University’s academic, research, and business needs.
+Led by the Chief Information Officer (CIO), ITS employs about 120 staff who provide a wide range of services and support. A central business office, project management office, service portfolio manager and communications strategist support ITS staff in these key areas. ITS is part of the Division of Finance and Administration, with the CIO reporting to the division vice president.
+ITS Service Desk
+is the centralized support center for campus technology. It is the first point of contact, streamlining how customers request services, access IT resources, and report issues. A ticketing system is used to assign, track and resolve requests efficiently and effectively, escalating complex cases as needed.
+ITS follows the ITIL (Information Technology Infrastructure Library) service management framework, which is used by many IT organizations in higher education. This approach offers a holistic technology experience by focusing on customer needs and continuous improvement across eight service categories:
+Administrative and Business Services
+Communication and Collaboration Services
+Desktop and Mobile Computing Services
+Information Security Services
+Infrastructure Services
+Research Services
+Teaching and Learning Services
+IT Professional Services
+Nearly all work in ITS is aligned by these service categories. Staff are assigned to dedicated service teams where they engage in a wide range of activities. Service management work encompasses the requests, incidents, and operational activities that support offerings provided by ITS.
+Projects typically represent new offerings and solutions, enhancements, and improvements to existing services. The ITS Project Portfolio currently includes over 250 projects. Approximately half of these are initiated by ITS to advance specific technical needs, while the others are requests from divisions and departments to meet specific goals and priorities. In nearly all cases, departmental initiatives cannot succeed without commitment from ITS.
+As the demand for technology typically outpaces ITS staff availability, this often results in competing priorities. One of the most valuable benefits of the IT Strategic Plan is the opportunity it presents to secure agreement and unify the campus in establishing direction and priorities.
+Overview of the IT Strategic Plan and Guiding Principles
+Technology is an integral part of the institution’s core priorities of student success, research excellence, diversity and inclusion, internationalization, and engagement and service. ITS has a long history of supporting these critical areas.
+The following guiding principles strongly influence ITS’s tactical direction:
+Advance campus partnerships by increasing engagement, reporting, and transparency using a service-based focus
+Improve responsiveness by introducing rapid delivery tools and reducing the use of technologies that require ITS staff to spend time on low-value work
+Operate vendor-supported hardware and software
+Workforce role realignments are expected in IT as both campus needs and technologies change
+Support the University’s commitment to sustainability
+ITS Advisory Committees and Campus Input
+One of the most essential elements of the IT Strategic Plan is the opportunity it provides for institutional engagement.
+Feedback is routinely gathered from campus partners to confirm that collectively, the work ITS is doing aligns with the University’s goals and priorities. Additional topics include updates or changes to existing services, projects in the ITS portfolio, resource availability, and other issues or concerns.
+Input is gathered from the following sources:
+ITS Administrative and Business Advisory Committee:
+Established in 2021, this group is composed of representative stakeholders from several student- and employee-facing organizations across campus. The Committee meets twice a year, once in the fall to review key plans and initiatives, and again in the spring to review accomplishments and ensure continued goal alignment.
+Information Security Advisory Committee:
+Initially established over a decade ago, this group has broad University representation to include unique perspectives on information security and institutional risks. This group recently adopted the cadence established by the Administrative and Business Advisory Committee of meeting twice a year and follows a similar agenda. Discussions may also include updates or briefings related to policies, laws, data governance, and compliance.
+DLE (Digital Learning Environment) Campus Work Group:
+Academic Affairs recently established this new group, which ITS is leveraging to provide a cycle of continuous feedback and improvement. Co-hosted by the Center for the Advancement of Teaching, Learning, and Online Education (CATLOE) and ITS, the group began meeting in Spring 2025 and is developing a framework for gathering input for future DLE capabilities.
+Similarly, ITS solicits input in research through engagement with existing groups. The Vice President for Research & Economic Development hosts the Research Data & Security Compliance Council, in which ITS is an active participant. Relationships with various centers, institutes, labs and individual researchers provide additional avenues for gathering information and feedback.
+3-Year Goals by Service Category
+The IT Strategic Plan consists of 3-year goals representing priority and direction in each service category.
+Influenced by the University Strategic Plan and core priorities, all goals were established through an iterative process with the respective ITS Advisory Committees (where applicable) and ITS leadership.
+Within ITS, goals influence the development of roadmaps for each service area, which in turn inform future projects and initiatives.
+Administrative and Business Services
+Services in this area directly impact University priorities related to recruitment, enrollment, and student success, impacting all members of the campus community. From students to faculty to researchers to staff, a tremendous number of processes and transactions are conducted daily, with some relying on aging, unsustainable technologies. Faster, more user-friendly applications and systems are needed to respond to demands more quickly and efficiently to retain the University’s competitive edge.
+Administrative and Business 3-Year Goals
+Prepare to move PeopleSoft to a modern, cloud-based system
+Within the next several years, UAlbany will convert from using the complex, on-premises PeopleSoft infrastructure housed in the University Data Center to cloud-based, vendor-hosted or vendor-provided systems. Significant commitment from the campus is needed to define the new technical environment and plan a successful migration.
+High-level Timeline
+FY 2025-2026:
+Identify options for selecting a vendor to assist the campus in conducting a readiness assessment and making recommendations on preparing to migrate to a cloud-based ERP.
+FY 2026-2028:
+Begin implementing the recommendation(s) determined by the consultant and campus community.
+Initiate additional projects, RFPs and other pertinent activities to advance migration as needed.
+Drive growth, adoption and expansion of business process automation capabilities
+The campus has widely adopted and embraced the expansion of automation capabilities.
+ITS initiated this by introducing new services to empower departments to improve workflow and business processes. These included JotForm, a platform that allows offices to create and manage their own forms, and Minerva ChatBot, an AI-based electronic assistant that simulates conversations and answers questions for customers. ITS supports an increasing number of offices in adopting these, and other specific technologies, to optimize business processes and workflows.
+Recent examples include the use of JotForm Sign, a digital signature replacing an increasing number of wet signatures on University documents; the Blackbaud CRM suite for University Advancement; a digitized request process with real-time tracking for Procurement Services that will go live shortly; and a new bulletin and course catalog management system for Undergraduate Education and the Graduate School.
+High-level Timeline
+FY 2025-2026:
+Fully launch the new procurement process.
+Implement Jaggaer, a new procurement system for the SUNY Research Foundation.
+Provide researchers with an application to support tailored contract reviews.
+Move Human Resources and Sponsored Programs into OnBase, the University’s document management system.
+FY 2026-2027:
+Implement an expedited travel reimbursement platform.
+Continue to identify and integrate new automation capabilities.
+Cultivate a holistic administrative experience for students and parents
+During the last strategic planning period, ITS implemented MuleSoft, an integration platform that increases interoperability between different information systems. This work laid the foundation for improving administrative workflows and minimizing processing delays for numerous campus offices. Faster turnaround times keep the University competitive with peers by providing students and their families with real-time, accurate information while increasing their satisfaction with business processes.
+High-level Timeline
+FY 2025-2026:
+Implement Edvisorly’s EddyAI platform, a transcript evaluation solution that automates manual processes and streamlines workflow.
+Advance use of CollegeSource’s suite of interactive resources in support of recruitment, retention and student success. Collectively, these applications offer students a wealth of data to support informed decision-making:
+TES (Transfer Evaluation System) offers a robust platform for locating course descriptions, researching transfer credit, tracking evaluations and managing equivalencies.
+Transferology provides students with information from more than 400 colleges about how transfer credit will be awarded for their previous coursework.
+Degree Planner tracks progress so students can achieve their educational goals in a timely manner.
+Schedule Builder assists students on creating an optimal academic schedule.
+Implement Delegated Access to further support enrollment and retention.
+Define needs for a student parent portal.
+FY 2026-2028:
+Continue to identify, build and implement new integrations to further advance holistic business processes and improvements.
+Select a long-term, comprehensive degree audit platform.
+Enhance reporting and analytics capabilities
+ITS recently completed the evaluation of visualization tools and determined that Tableau, Power BI, and Oracle Analytics Data Visualizer would all be made available to the campus to satisfy specific use cases.
+In this planning period, focus shifts to modernizing the University’s data analytics platform to provide a more unified, AI-powered, scalable solution. This will enhance reporting, improve accessibility and provide data-driven insights to advance innovation, support student success, and further streamline operations.
+High-level Timeline
+FY 2025-2026:
+Fully implement visualization tool availability.
+Define analyst user group support roles.
+Initiate procurement for a new data analytics platform.
+FY 2026-2028:
+Explore cloud-based BI solutions, evaluate campus data for possible implementation to BI.
+FY 2026-2027:
+Finalize procurement and implementation of data analytics platform.
+Teaching and Learning Services
+Teaching and Learning is always at the heart of the academic mission. This exciting space is continuously evolving as the University introduces new areas of study, undertakes fresh initiatives, and explores innovative technologies to deepen student engagement.
+Teaching and Learning 3-Year Goals
+Enhance the student experience through a modernized digital learning environment
+Academic Affairs has established a new Digital Learning Environment Work Group to bring focus and attention to the student academic experience.
+Co-chaired by the Center for the Advancement of Teaching, Learning, and Online Education (CATLOE) and ITS, this group is expected to provide input on pedagogy and technologies. ITS will continue working directly with faculty to support unique IT needs, including the integration of AI and specific environments into coursework.
+High-level Timeline
+FY 2025-2026:
+Implement VALT Intelligent Video Solutions and retire Media Edge in support of the Psychological Services Center and doctoral programs in counseling psychology.
+Implement plagiarism detection software integrated with Brightspace.
+Enable use of Brightspace for non-degree/certificate offerings and evaluate proposed cost and charge-back model options.
+Work with faculty and departments to consolidate online offerings into Brightspace.
+Embed health and wellbeing campus resources in Brightspace.
+Provide Institutional Research, Planning and Effectiveness with DLE data analytics for their reporting purposes.
+FY 2026-2028:
+Continued consolidation of online offerings into Brightspace.
+Advance towards next generation classroom technology
+Providing an immersive, engaging learning environment is critical to the academic experience.
+Integrating technology in the classroom helps students develop 21st century skills, including digital literacy, problem-solving and critical thinking, and prepares them for a technology-driven future. While there are already processes in place to maintain classroom technology, ITS is reallocating staff to create a dedicated AV technology team.
+One responsibility of this group is to develop equipment standards for all ITS-managed classrooms, setting the stage for a more consistent classroom technology experience. A challenge associated with this goal is classrooms managed by individual departments, which may rely on older machines.
+As this initiative progresses, ITS will explore options to advance equipment standards for all classrooms, regardless of physical location and how they are funded.
+High-level Timeline
+FY 2025-2026:
+Refine AV design standards for new and updated classroom spaces to enhance planning efforts and establish consistent cost modeling for AV projects.
+Catalog AV systems and components in departmental academic spaces to assess gaps based on current standards, improve cyclical replacement budget planning, and streamline procurement processes for break/fix scenarios.
+Propose a deployment plan to standardize AV equipment based on classroom types.
+FY 2026-2028:
+Continue AV equipment deployments to achieve a consistent user experience and advance classroom standards.
+Engage with academic departments to clarify service/support levels and cyclical funding scenarios.
+Strengthen the ability to support unique course technology needs
+While ITS has a wealth of experience delivering enterprise-wide technologies for teaching and learning, supporting the unique needs of individual faculty members requires focused time and attention.
+Last year, ITS hired its first Educational Technology Analyst to assist with these efforts. This role has quickly become a critical success factor in supporting innovative technologies, including inventive ways to infuse AI into the classroom.
+A new, non-standard request process helps ITS staff evaluate new IT requests to ensure they comply with all standards and requirements and can be supported appropriately by ITS.
+High-level Timeline
+FY 2025-2026:
+Implement a cloud-based cyber range solution to support CEHC classes and engage in assessment for utilization in other programs.
+Recommend, adopt and implement a VDI solution for Digital Forensics classes.
+Engage with the AI & Society College to capture and support technology needs for the infusion of AI in courses.
+Provide AV design specifications to deliver the CIHS Anatomy and Physiology class lab in PB-B19, including deployment of the “Anamotage” virtual anatomy/dissection table.
+Provide AV design consultation for the Game Design Studio classroom.
+Recommend and adopt refined practices for specialized academic workstation management to allow departments the flexibility to meet their curricular needs.
+Provide AV design consulting and specifications for Lecture Center renovation projects (LC-23, LC-24, LC-25).
+FY 2026-2028:
+Continue driving the ability to respond to specialized classroom technology needs.
+On-going engagement with the AI & Society College to support evolving needs.
+Research Services
+The University at Albany maintains a vigorous research agenda commensurate with its status as one of SUNY’s four University Centers and its Carnegie R1 designation.
+A highly visible AI-driven research program continues to draw attention across the SUNY System, New York State and beyond, recently unveiling of one of the most advanced AI supercomputers at a U.S. university.
+ITS plays a critical role in supporting the facilities, equipment, knowledge, and expertise to advance sophisticated, strategic growth and support across the interdisciplinary research enterprise.
+Research 3-Year Goals
+Define an AI business development model to recover associated expenses from various users
+The successful implementation of multiple AI supercomputing systems has attracted collaborators from across SUNY and industry partners.
+As part of this initiative, the University is preparing several charging models for use of the NVIDIA on-premises cluster. An internal model for UAlbany faculty is already in place and two additional models are near completion: one for startup companies that are members of the UAlbany Innovation Center and another for industry partners in the Industry Affiliate Program.
+A fourth model for SUNY-wide faculty is also underway. Technical support solutions have been implemented, including automated tracking, notification systems, workload prioritization for paid users and a streamlined onboarding process.
+Continued advancements will provide financial transparency, assist in budgeting and forecasting growth and assure accountability across the campus, the SUNY System and with business partners.
+High-level Timeline
+FY 2025-2026:
+Finalize chargeback models for completion and prepare this goal for retirement.
+Develop campus-wide asset inventory of research-funded equipment to support specialized research needs, enhance security, and inform planning efforts
+The University at Albany supports a vibrant, diverse research environment with over 1,100 labs and research spaces across campus. To ensure continued excellence in interdisciplinary research, ITS is developing a comprehensive, campus-wide inventory of research-funded equipment and specialized instruments.
+This initiative will enable ITS to better understand and support specialized research needs, tailoring solutions that allow researchers to focus on innovation without compromising compliance or performance. This approach further helps mitigate risks, ensures network integrity, and informs decision-making for future investments.
+High-level Timeline
+FY 2025-2026:
+Develop the inventory of research-funded equipment.
+Achieve 70% completion of research equipment inventory by December 2025 with full completion by June 30, 2026.
+Continue refining processes for ITS to manage an accurate research inventory while optimizing research productivity.
+FY 2026-2028:
+Explore and identify sustainable solutions to meet specific research needs.
+Begin annual inventory confirmation and address cyclic replacement as needed.
+Transition activities to operations and retire this goal.
+Information Security Services
+The University is strengthening its information security posture through a strategically aligned program focused on protecting institutional assets and enabling secure collaboration. Key initiatives include:
+Advance technical controls: Deploy of advanced controls such as encryption protocols, secure network architectures, access management systems and continuous monitoring tools to ensure the confidentiality, integrity and availability of sensitive data.
+Identity and Access Management (IAM) Modernization: Utilize and implement role-based access controls to streamline authentication workflows and reduce risk exposure.
+Reinforce policies and standards: Enhance system-level protections through updated policies, standards and procedures that guide secure operations.
+Build compliance and resilience: Continued alignment with applicable laws, regulations and policies to safeguard data integrity, support uninterrupted operations, and preserve institutional reputation.
+Governance Integration: While data governance is a work in progress, technical controls serve as a bridge to support secure data handling and informed decision-making.
+These efforts reflect ITS’ commitment to evolving its security framework in response to emerging threats and institutional needs.
+Information Security 3-Year Goals
+Improving security with advanced tools
+Identity and access management provides the University with critical assurance that all individuals are authorized to access only the information they need to successfully fulfill their campus role (i.e., student, faculty, staff, etc.), and that anyone with access to sensitive and protected resources is authorized to do so.
+ITS is procuring a new platform that will fundamentally change the processes by which individuals receive the campus credentials governing their access. It will also enhance security, support compliance, and provision accounts more quickly, further improving the user experience.
+High-level Timeline
+FY 2025-2026:
+Procure and begin implementation for a new identity and access management platform.
+Enhanced vetting and approval for external research collaborators.
+FY 2026-2027:
+Complete the implementation of a new identity and access management platform.
+FY 2027-2028:
+Evaluate and develop enhancements to the new platform, including how it might be automated to streamline IAM-related processes in other departments.
+Strengthening information security program controls
+UAlbany’s information security program is designed to protect the integrity, availability and confidentiality of its information systems.
+ITS is working with the Office of Enterprise Risk Management and other campus partners to ensure the University’s governance framework, risk management strategy and enterprise architecture provide appropriate safeguards to proactively manage risks while fostering a campus-wide culture of information security.
+High-level Timeline
+FY 2025-2026:
+Develop and implement a risk assessment process that can be used to evaluate information security for third-party applications as part of a new Vendor Risk Management Initiative.
+Identify and define a process for exception requests and approvals that require temporary deviations from the Information Security Program and/or related standards.
+Strengthen governance with updated policies, standards and procedures, including the development of standards in the following areas:
+Account Management
+Passwords
+Multifactor Authentication
+Encryption at Rest
+Endpoint Detection and Response Development
+Regular Assessment and Remediation Process
+Patch Management
+Advance the ability to monitor and respond to incidents by centralizing and automating information security tools, including automated reporting agents on every server and third-party monitoring of alerts 24 hours per day, 7 days per week, 365 days per year.
+Enhance engagement with distributed IT staff across the University to:
+Inventory their services and assets.
+Share the revised Information Security Program by Spring 2026 and begin assessing compliance.
+FY 2026-2028:
+Continue to review and update the program based on emerging threats and risks, applicable campus initiatives, and new protection technologies.
+Continue assessing compliance for distributed IT services and assets.
+Infrastructure Services
+Behind every ITS service lies a complex, robust IT infrastructure. This includes the servers, networks, storage, systems, and cloud platforms that quietly ensure everything runs smoothly.
+While the campus community interacts and relies upon a host of applications and services, it is the underlying infrastructure that guarantees these are fast, secure and available 24 hours per day, 7 days per week. Without this foundation, even the most polished front-end systems would be unable to deliver consistent and dependable user experiences.
+Recently, ITS has focused on enterprise architecture, establishing a strategic framework to align technology, processes and data with the University’s institutional mission and goals.
+Several processes are being established to evaluate technology needs holistically, at the start of new initiatives and assess their ability to comply with a host of laws, regulations and policies. Such processes are expected to promote enterprise architecture standards, reduce complexity and position ITS to respond more quickly to requests for unique technology needs.
+Infrastructure 3-Year Goals
+Continued growth and improvement to the University wired and wireless networks
+The University network is a critical success factor in all campus activities. As device usage and density increases across campus, strengthening and expanding infrastructure is critical. Although the University’s wireless footprint continues to grow, demand for broader and more reliable coverage remains high.
+To meet these expectations, ITS is actively replacing aging wireless access points, building in redundancies and improving the performance and resilience of this vital service.
+High-level Timeline
+FY 2025-2026:
+Complete replacement of all legacy WAPs, increase wireless coverage in all remaining buildings, and upgrade wired service in 9% of remaining buildings.
+FY 2026-2027:
+Replace network switches and wired infrastructure in 11% of buildings upgrading to new equipment.
+FY 2027-2028:
+Replace network switches and wired infrastructure in 12% of buildings upgrading to new equipment.
+Desktop and Mobile Computing Services
+In the last fiscal year, ITS made significant to improvements to the computing environment, many of which were facilitated by adopting a centrally managed model for University-owned workstations. This practice fosters consistent user experiences, improves security and compliance, and increases campus-wide mobility.
+These improvements have positioned ITS to advance equipment standards and lifecycles, inform efforts to encourage more efficient, effective spending strategies, and reinforce energy and sustainability goals for University equipment.
+Desktop and Mobile Computing 3-Year Goals
+Develop campus-wide hardware asset inventory, equipment standards, and centralized funding to improve security and consistency on university-owned computers
+ITS will continue populating the inventory of University-owned computers. Completing this process will advance the centralized funding model by informing evolving standards for University-owned equipment, ensuring that standard configurations continue meeting broad campus needs. An accurate, campus-wide inventory supports the adoption of on-going, cyclic lifecycles for workstations, identifying replacement strategies, and effectively predicting annual hardware replacement costs.
+High-level Timeline
+FY 2025-2026:
+Complete the replacement of remaining faculty, staff and multi-user Windows-based and Mac workstations that exceed ITS lifecycle standards (more than 6 years old).
+Continue refining standard configurations to ensure all workstations are centrally managed by ITS, are secure, and have a current, supported operating system.
+Develop an inventory of University workstation software and adopt effective strategies for its procurement, management, and distribution
+When the hardware inventory is complete, focus will shift to University-licensed software. Beginning in FY 2026-27, ITS will develop a full software inventory.
+Effective tools should be identified and implemented to streamline software procurement, management and distribution, while greater knowledge of application usage and security vulnerabilities will be cultivated. Improvements to these processes will continue to advance consistent software experiences on University-owned workstations across the campus.
+High-level Timeline
+FY 2026-2027:
+ITS will focus on enterprise software by developing more effective approaches to overseeing, negotiating and procuring applications from vendors and ITEC.
+Refine ITS’ process for software recharges and distribution.
+FY 2027-2028:
+ITS will focus on application security by using appropriate tools to identify vulnerabilities on University workstations. An effective patch management remediation strategy will be developed to address vulnerable applications.
+Communication and Collaboration Services
+Communication and collaboration services are essential for fostering innovation, connection, and productivity across the University. The ability to engage in both face-to-face and online environments, share documents, and conduct other interactive activities are firmly engrained in campus culture.
+ITS continues its efforts to develop standards that promote a consistent user experience in University amenity conference rooms. Coordinated efforts with Facilities are underway to ensure existing and new conference rooms meet ITS’s evolving AV technical standards.
+Communication and Collaboration 3-Year Goals
+Advance towards next generation conference room technology
+ITS is collaborating closely with Facilities to ensure that conference room technologies share common equipment standards, an established lifecycle, and an agreed-upon refresh schedule for updates.
+Innovative technologies are being evaluated, including simplified touch panels, multiple screen integration, and new scheduling capabilities, to support a smaller number of conference rooms with more advanced technologies to meet specialized needs.
+High-level Timeline
+FY 2025-2026:
+Hire AV Technology Manager and solidify the AV Technology Group.
+Upgrade simplified touch screens, wireless casting and replace legacy bulb projectors with updated technology in 50% of all University Amenity conference rooms.
+Develop standards for high end University Amenity Conference Rooms.
+Define Event Space Technology and Support as a service offering.
+FY 2026-2028:
+Complete the upgrade and implementation of simplified touch screens, wireless casting and replace legacy bulb projectors with updated technology in the remaining University Amenity conference rooms.
+Complete Conference Room AV hardware asset inventory.
+Design and pilot a high-end technology conference room.
+Conclusion
+The University at Albany’s IT Strategic Plan provides a comprehensive approach to harness to power of technology to advance academic, research and service excellence.
+Aligning IT initiatives with the University’s mission and priorities assure a more connected, innovative campus environment. Through strategic investments and collaborative partnerships, we will enhance operational efficiency, drive innovation and deliver exceptional value to our stakeholders.
+As we move forward, continuous assessment and adaptation will be key to our success. ITS will regularly assess our progress, seek input from stakeholders, and remain nimble in responding to emerging trends and challenges.
+Together, we will navigate the challenges and opportunities of the digital age, positioning ourselves for a prosperous future.
+Information Technology Services Home
