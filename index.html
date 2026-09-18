@@ -451,11 +451,16 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="reveal-scale" data-step="1" style="margin-top:32px; width:100%;">
     <div class="terminal-block">
       <div><span class="terminal-prompt">$</span> gemini</div>
-      <div style="margin-top:12px;"><span class="terminal-string">"Build me a Central IT help desk agent using ADK.</span></div>
-      <div><span class="terminal-string">&nbsp;It should have four specialist sub-agents:</span></div>
-      <div><span class="terminal-string">&nbsp;Identity, Network, Applications, and Security.</span></div>
-      <div><span class="terminal-string">&nbsp;Give it tools to check system status and create tickets.</span></div>
-      <div><span class="terminal-string">&nbsp;The coordinator should route issues to the right specialist."</span></div>
+      <div style="margin-top:12px;"><span class="terminal-string">"Use Agents CLI to create a Python ADK prototype</span></div>
+      <div><span class="terminal-string">&nbsp;named central-it-agent. Create a root agent named</span></div>
+      <div><span class="terminal-string">&nbsp;central_it_agent for a university Central IT service desk.</span></div>
+      <div><span class="terminal-string">&nbsp;Add two local function tools:</span></div>
+      <div><span class="terminal-string">&nbsp;- get_system_status(service): in-memory dict for</span></div>
+      <div><span class="terminal-string">&nbsp;&nbsp; Brightspace, Campus Wi-Fi, Duo, Zoom, and VPN</span></div>
+      <div><span class="terminal-string">&nbsp;- create_ticket(category, summary, priority): return</span></div>
+      <div><span class="terminal-string">&nbsp;&nbsp; a fictional incident ID like INC-1001.</span></div>
+      <div><span class="terminal-string">&nbsp;Install dependencies and give me the command to open</span></div>
+      <div><span class="terminal-string">&nbsp;the local ADK playground."</span></div>
     </div>
   </div>
   <div class="gc-flow" style="margin-top:32px; width:100%; justify-content:center;">
@@ -468,18 +473,18 @@ strong { color: var(--gc-blue); font-weight: 700; }
     <div class="gc-flow-box teal reveal-scale" data-step="3">
       <span class="material-symbols-outlined">terminal</span>
       <span>Gemini CLI</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Generates the code</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Scaffolds &amp; writes code</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="4"></div>
     <div class="gc-flow-box blue reveal-scale" data-step="4">
       <span class="material-symbols-outlined">smart_toy</span>
-      <span>Working Agent</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">ADK framework</span>
+      <span>central_it_agent</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">get_system_status + create_ticket</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="5"></div>
     <div class="gc-flow-box green reveal-scale" data-step="5">
       <span class="material-symbols-outlined">play_arrow</span>
-      <span>Test &amp; Run</span>
+      <span>ADK Playground</span>
       <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">adk web</span>
     </div>
   </div>
@@ -505,49 +510,49 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Step 1: <strong>BigQuery Environment</strong></h2>
-    <p class="subtext">Create a dataset with real data from the web &mdash; using natural language</p>
+    <p class="subtext">Pull real data from the web, structure it, load it into BigQuery</p>
   </div>
   <div class="reveal-scale" data-step="1" style="margin-top:28px; width:100%;">
     <div class="terminal-block">
       <div><span class="terminal-prompt">$</span> gemini</div>
-      <div style="margin-top:12px;"><span class="terminal-string">"Create a BigQuery dataset called campus_it_data.</span></div>
-      <div><span class="terminal-string">&nbsp;Find real public data on university IT service desk metrics,</span></div>
-      <div><span class="terminal-string">&nbsp;network outage reports, and help desk ticket volumes.</span></div>
-      <div><span class="terminal-string">&nbsp;Load it into tables and make sure I can query it."</span></div>
+      <div style="margin-top:12px;"><span class="terminal-string">"Pull up the latest model releases in the last 5 months.</span></div>
+      <div><span class="terminal-string">&nbsp;Get the Artificial Index benchmarks for the released models</span></div>
+      <div><span class="terminal-string">&nbsp;and extract the pricing. Load the data into a structured</span></div>
+      <div><span class="terminal-string">&nbsp;format in a new BigQuery environment."</span></div>
     </div>
   </div>
   <div class="gc-flow" style="margin-top:32px; width:100%; justify-content:center;">
     <div class="gc-flow-box blue reveal-scale" data-step="2">
       <span class="material-symbols-outlined">language</span>
-      <span>Web Data</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Public datasets, APIs</span>
+      <span>Web Research</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Model releases, benchmarks</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="3"></div>
     <div class="gc-flow-box red reveal-scale" data-step="3">
       <span class="material-symbols-outlined">terminal</span>
       <span>Gemini CLI</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Fetches &amp; structures</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Scrapes, structures, loads</span>
     </div>
     <div class="gc-flow-arrow reveal" data-step="4"></div>
     <div class="gc-flow-box green reveal-scale" data-step="4">
       <span class="material-symbols-outlined">database</span>
       <span>BigQuery</span>
-      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Live, queryable tables</span>
+      <span style="font-size:0.7rem; opacity:0.8; font-weight:400;">Queryable tables</span>
     </div>
   </div>
   <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
     <div class="card-grid cols-3">
       <div class="card blue-top" style="padding:16px; text-align:center;">
-        <h3 style="font-size:0.9rem;">tickets</h3>
-        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Help desk ticket history, categories, resolution times</p>
+        <h3 style="font-size:0.9rem;">models</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Model name, provider, release date, parameter count</p>
       </div>
       <div class="card red-top" style="padding:16px; text-align:center;">
-        <h3 style="font-size:0.9rem;">outages</h3>
-        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Network &amp; service outage logs with timestamps</p>
+        <h3 style="font-size:0.9rem;">benchmarks</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Artificial Index scores, MMLU, HumanEval, reasoning</p>
       </div>
       <div class="card green-top" style="padding:16px; text-align:center;">
-        <h3 style="font-size:0.9rem;">service_status</h3>
-        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Current service health, uptime, degradation events</p>
+        <h3 style="font-size:0.9rem;">pricing</h3>
+        <p style="font-size:0.7rem; color:var(--gc-secondary); margin-top:4px;">Input/output token costs, context window, rate limits</p>
       </div>
     </div>
   </div>
@@ -559,22 +564,22 @@ strong { color: var(--gc-blue); font-weight: 700; }
   <div class="gc-logo"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC04">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> <span style="color:#5F6368">Cloud</span></div>
   <div class="reveal" data-step="0">
     <h2>Step 2: <strong>Connect to Your Agent</strong></h2>
-    <p class="subtext">Give your ADK agent access to live BigQuery data</p>
+    <p class="subtext">Give your ADK agent access to the BigQuery model database</p>
   </div>
   <div class="reveal-scale" data-step="1" style="margin-top:28px; width:100%;">
     <div class="terminal-block">
       <div><span class="terminal-prompt">$</span> gemini</div>
-      <div style="margin-top:12px;"><span class="terminal-string">"Add a BigQuery tool to my Central IT agent.</span></div>
-      <div><span class="terminal-string">&nbsp;It should be able to query the campus_it_data dataset</span></div>
-      <div><span class="terminal-string">&nbsp;to look up real ticket history, check outage patterns,</span></div>
-      <div><span class="terminal-string">&nbsp;and pull live service status when diagnosing issues."</span></div>
+      <div style="margin-top:12px;"><span class="terminal-string">"I have a database in my BigQuery environment which has</span></div>
+      <div><span class="terminal-string">&nbsp;model information. Is it possible for you to make this</span></div>
+      <div><span class="terminal-string">&nbsp;agent look up the query information and then provide</span></div>
+      <div><span class="terminal-string">&nbsp;details as and when the user asks questions about it?"</span></div>
     </div>
   </div>
   <div style="display:flex; gap:16px; margin-top:32px; width:100%; align-items:stretch;">
     <div class="card purple-top reveal-scale" data-step="2" style="flex:1; padding:20px; text-align:center;">
       <div class="gc-badge purple" style="margin:0 auto 12px;"><span class="material-symbols-outlined">smart_toy</span></div>
       <h3 style="font-size:0.95rem;">ADK Agent</h3>
-      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">Your Central IT help desk from Level 3</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">central_it_agent from Level 3</p>
     </div>
     <div style="display:flex; align-items:center;">
       <div class="gc-flow-arrow reveal" data-step="3"></div>
@@ -582,20 +587,20 @@ strong { color: var(--gc-blue); font-weight: 700; }
     <div class="card teal-top reveal-scale" data-step="3" style="flex:1; padding:20px; text-align:center;">
       <div class="gc-badge teal" style="margin:0 auto 12px;"><span class="material-symbols-outlined">build</span></div>
       <h3 style="font-size:0.95rem;">BigQuery Tool</h3>
-      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">query_tickets(), check_outages(), get_service_status()</p>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">query_models(), get_benchmarks(), compare_pricing()</p>
     </div>
     <div style="display:flex; align-items:center;">
       <div class="gc-flow-arrow reveal" data-step="4"></div>
     </div>
     <div class="card dark-blue-top reveal-scale" data-step="4" style="flex:1; padding:20px; text-align:center;">
       <div class="gc-badge dark-blue" style="margin:0 auto 12px;"><span class="material-symbols-outlined">database</span></div>
-      <h3 style="font-size:0.95rem;">Live Data</h3>
-      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">Real ticket history, outage logs, service health</p>
+      <h3 style="font-size:0.95rem;">Model Data</h3>
+      <p style="font-size:0.75rem; color:var(--gc-secondary); margin-top:6px;">Releases, Artificial Index benchmarks, pricing</p>
     </div>
   </div>
   <div class="reveal" data-step="5" style="margin-top:24px; width:100%;">
     <div style="background:var(--gc-surface); border-radius:var(--radius); padding:16px 24px; border-left:4px solid var(--gc-dark-blue);">
-      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-dark-blue);">rocket_launch</span> <strong style="color:var(--gc-text);">The payoff:</strong> Your agent now answers from real data, not mock responses. "How many Wi-Fi tickets this week?" returns actual numbers.</p>
+      <p style="font-size:0.95rem; color:var(--gc-secondary);"><span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle; color:var(--gc-dark-blue);">rocket_launch</span> <strong style="color:var(--gc-text);">The payoff:</strong> Ask "Which model scores highest on reasoning?" or "Compare Gemini vs GPT-4o pricing" &mdash; the agent queries BigQuery and answers from real data.</p>
     </div>
   </div>
   <div class="gc-banner"><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div><div class="gc-band"></div></div>
@@ -638,7 +643,7 @@ strong { color: var(--gc-blue); font-weight: 700; }
       <h3 style="font-size:1.1rem;">Level 4</h3>
       <p class="subtext" style="font-size:0.8rem; margin-top:4px;">BigQuery + Agents</p>
       <div style="margin-top:12px; font-size:0.75rem; color:var(--gc-secondary);">
-        Live data powering real agent decisions
+        Real model data powering agent answers
       </div>
     </div>
   </div>
